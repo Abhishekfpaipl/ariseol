@@ -1,11 +1,29 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <DashboardNav />
   <router-view />
+  <FooterBar />
 </template>
-
+<script>
+import DashboardNav from "@/components/TopNav.vue";
+import FooterBar from "@/components/FooterBar.vue";
+export default {
+  name: "App",
+  components: {
+    DashboardNav,
+    FooterBar
+  },
+  computed: {
+    // hide() {
+    //   const hiddenPages = [
+    //     'LoginPage', 'RegistrationPage', 'EmailVerificationPage', 'ForgotPasswordPage', 'ResetPasswordPage',
+    //     'BasicDetails', 'ConnectDetails', 'OverviewDetails', 'WorktimeDetails', 'BusinessTypeDetails', 'BrandingDetails',
+    //     'ProductList', 'CreateProduct', 'CollectionList', 'RewardsDetails', 'DashboardPage', 'ReviewListPage', 'SupportersDetails', 'FamesetDetails', 'CategoryDetails', 'BankDetails', 'SocialDetails'
+    //   ]
+    //   return hiddenPages.includes(this.$route.name)
+    // }, 
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -13,18 +31,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
