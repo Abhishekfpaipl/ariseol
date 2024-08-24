@@ -15,9 +15,7 @@ export default {
   computed: {
     // hide() {
     //   const hiddenPages = [
-    //     'LoginPage', 'RegistrationPage', 'EmailVerificationPage', 'ForgotPasswordPage', 'ResetPasswordPage',
-    //     'BasicDetails', 'ConnectDetails', 'OverviewDetails', 'WorktimeDetails', 'BusinessTypeDetails', 'BrandingDetails',
-    //     'ProductList', 'CreateProduct', 'CollectionList', 'RewardsDetails', 'DashboardPage', 'ReviewListPage', 'SupportersDetails', 'FamesetDetails', 'CategoryDetails', 'BankDetails', 'SocialDetails'
+    //     'LoginPage', 'RegistrationPage', 'EmailVerificationPage', 'ForgotPasswordPage', 'ResetPasswordPage',  
     //   ]
     //   return hiddenPages.includes(this.$route.name)
     // }, 
@@ -31,5 +29,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+:root{
+  --brand-color:#E31E24 !important
 }
 </style>

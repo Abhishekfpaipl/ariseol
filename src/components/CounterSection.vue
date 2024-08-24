@@ -1,7 +1,7 @@
 <template>
     <div class="bg-light py-4">
         <div class="container" v-observe>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card border-0 bg-white shadow-sm">
                         <div class="card-body text-center">
