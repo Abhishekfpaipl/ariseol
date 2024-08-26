@@ -10,7 +10,8 @@
                 v-for="(job, index) in resume.experience" 
                 :key="index"
                 :ref="'jobCard' + index"
-                :class="getCardClass(index)">
+                >
+                <!-- :class="getCardClass(index)" -->
                 <div class="position-relative border bg-rounded bg-white">
                     <div class="d-flex gap-2 text-bg-light p-3 pe-0 pb-0">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RtG1nbTevktTfxpzyx-T-13zpDJwtLQz-A&s"
@@ -86,28 +87,28 @@ export default {
             }
         }
     },
-    mounted() {
-        this.addScrollAnimation();
-    },
-    methods: {
-        addScrollAnimation() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            });
+    // mounted() {
+    //     // this.addScrollAnimation();
+    // },
+    // methods: {
+    //     addScrollAnimation() {
+    //         const observer = new IntersectionObserver((entries) => {
+    //             entries.forEach(entry => {
+    //                 if (entry.isIntersecting) {
+    //                     entry.target.classList.add('animate');
+    //                 }
+    //             });
+    //         });
 
-            this.resume.experience.forEach((job, index) => {
-                const card = this.$refs['jobCard' + index][0];
-                observer.observe(card);
-            });
-        },
-        getCardClass(index) {
-            return index % 2 === 0 ? 'slide-right' : 'slide-left';
-        }
-    }
+    //         this.resume.experience.forEach((job, index) => {
+    //             const card = this.$refs['jobCard' + index][0];
+    //             observer.observe(card);
+    //         });
+    //     },
+    //     getCardClass(index) {
+    //         return index % 2 === 0 ? 'slide-right' : 'slide-left';
+    //     }
+    // }
 }
 </script>
 
