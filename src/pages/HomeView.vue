@@ -1,5 +1,6 @@
 <template>
-  <div class="mt-2" style="padding-top: 74px;">
+  <div class="mt-2" style="padding-top: 64px;">
+    <CarouselBanner />
     <CounterSection />
     <CardSection />
     <ImageTextSection />
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import CarouselBanner from "@/components/CarouselBanner.vue";
 import GallerySection from "@/components/GallerySection.vue";
 import CounterSection from "@/components/CounterSection.vue";
 import CardSection from "@/components/CardSection.vue";
@@ -28,6 +30,7 @@ import CareerSection from "@/components/CareerSection.vue";
 export default {
   name: "HomeView",
   components: {
+    CarouselBanner,
     GallerySection,
     CounterSection,
     CardSection,
