@@ -8,8 +8,8 @@
         <div class="row" v-observe>
             <div class="col-md-4 mb-4">
                 <div class="d-flex gap-3 align-items-start mb-4" v-for="(link, index) in links" :key="index" >
-                    <i class="bi text-white rounded-circle d-flex justify-content-center align-items-center bg-secondary"
-                        :class="link.icon" style="width: 44px; height: 44px;"></i>
+                    <i class="col-6 bi text-white rounded-circle d-flex justify-content-center align-items-center"
+                        :class="link.icon" style="width: 44px; height: 44px;background-color: var(--brand-color);"></i>
                     <div class="text-start">
                         <h5 class="text-primary">{{ link.title }}</h5>
                         <p>{{ link.description }}</p>
@@ -64,17 +64,17 @@ export default {
                 {
                     title: 'Address',
                     icon: 'bi-geo-alt',
-                    description: 'A108 Adam Street, New York, NY 535022'
+                    description: 'HD-723, WeWork Enam Sambhav, C - 20, G Block Rd, G-Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra - 400051'
                 },
                 {
                     title: 'Call Us',
                     icon: 'bi-telephone',
-                    description: '+1 5589 55488 55'
+                    description: '+91 8860012001'
                 },
                 {
                     title: 'Email Us',
                     icon: 'bi-envelope',
-                    description: 'info@example.com'
+                    description: 'info@clgoilindia.com'
                 },
             ]
         }

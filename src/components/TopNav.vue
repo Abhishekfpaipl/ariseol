@@ -6,7 +6,7 @@
             <router-link :to="link.route" class="text-decoration-none text-white" v-for="(link, index) in links"
                 :key="index">{{ link.name }}</router-link>
         </div>
-        <i class="bi bi-list fs-1 d-md-none d-block" data-bs-toggle="offcanvas" data-bs-target="#MobileMenu"
+        <i class="bi bi-list fs-1 d-md-none d-block text-white" data-bs-toggle="offcanvas" data-bs-target="#MobileMenu"
             aria-controls="MobileMenu"></i>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="MobileMenu" aria-labelledby="MobileMenuLabel">

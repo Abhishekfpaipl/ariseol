@@ -20,7 +20,8 @@
       <div class="modal-content bg-transparent">
         <div class="modal-body">
           <div class="d-flex justify-content-end">
-            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <i class="bi bi-x text-white fs-1" data-bs-dismiss="modal" aria-label="Close"></i>
+            <!-- <button type="button" class="btn-close btn-white text-white" data-bs-dismiss="modal" aria-label="Close"></button> -->
           </div>
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
