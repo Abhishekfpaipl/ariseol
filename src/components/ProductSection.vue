@@ -2,7 +2,7 @@
     <div class="container">
         <div class="text-start mb-5">
             <p class="text-muted mb-1 text-uppercase">Products</p>
-            <h2 class="display-5 text-primary text-uppercase">Check Our Products</h2>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Check Our Products</h2>
         </div>
         <div class="row">
             <div v-for="(product, index) in products" :key="index" class="col-md-4 mb-4" v-observe>
@@ -11,7 +11,7 @@
                     <img :src="product.image" class="img-fluid" :alt="product.title">
                     <div class="card-body d-flex flex-column">
                         <div class="icon-wrapper mb-2">
-                            <i class="bi bi-gear-fill text-warning"></i>
+                            <i class="bi bi-gear-fill " style="color: var(--bg-primary);"></i>
                         </div>
                         <h5 class="card-title">{{ product.title }}</h5>
                         <!-- <p v-if="product.expanded" class="card-text mt-2">{{ product.description }}</p> -->

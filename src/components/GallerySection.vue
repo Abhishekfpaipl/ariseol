@@ -2,28 +2,24 @@
   <div class="container" v-observe>
     <div class="text-start mb-5">
       <p class="text-muted mb-1 text-uppercase">Gallery</p>
-      <h2 class="display-5 text-primary text-uppercase">Check Our Gallery</h2>
+      <h2 class="display-5  text-uppercase" style="color: var(--bg-primary);">Check Our Gallery</h2>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
       <div class="col" v-for="(image, index) in images" :key="index" data-bs-toggle="modal"
         data-bs-target="#exampleModal">
         <div class="card rounded-0 border-0 overflow-hidden">
-          <img :src="image" alt="Gallery" class="w-100">
+          <img :src="image" alt="Gallery" class="w-100" style="height: 300px;object-fit: cover;">
         </div>
       </div>
     </div>
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content bg-transparent">
-        <div class="modal-body">
-          <div class="d-flex justify-content-end">
-            <i class="bi bi-x text-white fs-1" data-bs-dismiss="modal" aria-label="Close"></i>
-            <!-- <button type="button" class="btn-close btn-white text-white" data-bs-dismiss="modal" aria-label="Close"></button> -->
-          </div>
-          <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="modal-body p-0"> 
+          <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center align-items-center">
             <div class="carousel-indicators">
               <button v-for="(image, index) in images" :key="'indicator-' + index" type="button"
                 :data-bs-target="'#carouselExampleIndicators'" :data-bs-slide-to="index"
@@ -33,7 +29,7 @@
             <div class="carousel-inner">
               <div v-for="(image, index) in images" :key="'carousel-item-' + index" class="carousel-item"
                 :class="{ 'active': index === activeIndex }">
-                <img :src="image" class="vh-100 vw-100" alt="..." style="object-fit: contain;">
+                <img :src="image" class="vh-100 vw-100" alt="..." style="object-fit: contain;" data-bs-dismiss="modal">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -59,14 +55,15 @@ export default {
   data() {
     return {
       images: [
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-1.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-2.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-3.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-4.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-5.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-6.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-7.jpg",
-        "https://bootstrapmade.com/demo/templates/Bootslander/assets/img/gallery/gallery-8.jpg",
+        "/img/gallery/1.jpg",
+        "/img/gallery/2.jpg",
+        "/img/gallery/3.jpg",
+        "/img/gallery/4.jpg",
+        "/img/gallery/5.jpg",
+        "/img/gallery/6.jpg",
+        "/img/gallery/7.jpg",
+        "/img/gallery/8.jpg",
+        "/img/gallery/9.jpg",
       ],
       activeIndex: 0
     }

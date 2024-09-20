@@ -20,7 +20,7 @@
             :class="{ active: index === 0 }"
             data-bs-interval="2000"
           >
-            <img :src="image.src" class="d-block w-100" :alt="image.alt">
+            <img :src="image.src" class="d-block w-100" :alt="image.alt" style="max-height: 500px;">
             <div class="carousel-caption d-none d-md-block">
               <h5>{{ image.label }}</h5>
               <p>{{ image.content }}</p>

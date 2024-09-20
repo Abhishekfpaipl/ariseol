@@ -1,23 +1,23 @@
 <template>
     <div class="container my-5">
         <div class="mb-5 text-start">
-            <p class="text-muted mb-1">CONTACT</p>
-            <p class="display-5 text-primary">CHECK OUR CONTACT</p>
+            <p class="text-muted text-uppercase mb-1">CONTACT</p>
+            <p class="display-5 text-uppercase" style="color: var(--bg-primary);">CHECK OUR CONTACT</p>
         </div>
 
         <div class="row" v-observe>
             <div class="col-md-4 mb-4">
-                <div class="d-flex gap-3 align-items-start mb-4" v-for="(link, index) in links" :key="index" >
+                <div class="d-flex gap-3 align-items-start mb-4" v-for="(link, index) in links" :key="index">
                     <i class="col-6 bi text-white rounded-circle d-flex justify-content-center align-items-center"
-                        :class="link.icon" style="width: 44px; height: 44px;background-color: var(--brand-color);"></i>
+                        :class="link.icon" style="width: 44px; height: 44px;background-color: var(--bg-primary);"></i>
                     <div class="text-start">
-                        <h5 class="text-primary">{{ link.title }}</h5>
+                        <h5 class="text-danger">{{ link.title }}</h5>
                         <p>{{ link.description }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-8"  >
+            <div class="col-md-8">
                 <form @submit.prevent="submitForm">
                     <div class="row g-3">
                         <div class="col-md-6 form-floating">
@@ -40,7 +40,7 @@
                                 required></textarea>
                         </div>
                         <div class="col-12 text-end">
-                            <button type="submit" class="btn btn-success rounded-pill px-4 py-2">Send Message</button>
+                            <button type="submit" class="btn text-white rounded-pill px-4 py-2" style="background-color: var(--bg-primary);">Send Message</button>
                         </div>
                     </div>
                 </form>
@@ -66,11 +66,11 @@ export default {
                     icon: 'bi-geo-alt',
                     description: 'HD-723, WeWork Enam Sambhav, C - 20, G Block Rd, G-Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra - 400051'
                 },
-                {
-                    title: 'Call Us',
-                    icon: 'bi-telephone',
-                    description: '+91 8860012001'
-                },
+                // {
+                //     title: 'Call Us',
+                //     icon: 'bi-telephone',
+                //     description: '+91 8860012001'
+                // },
                 {
                     title: 'Email Us',
                     icon: 'bi-envelope',

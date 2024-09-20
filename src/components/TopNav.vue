@@ -1,7 +1,9 @@
 <template>
     <div class="position-fixed w-100 d-flex justify-content-between  align-items-center p-2 top-0"
-        style="z-index: 10; background-color: var(--brand-color);">
-        <img src="img/logo.png" alt="" style="height: 50px;">
+        style="z-index: 10; background-color: var(--bg-primary);">
+        <router-link to="/">
+            <img src="img/logo.png" alt="" style="height: 50px;">
+        </router-link>
         <div class="d-none d-md-flex align-items-center gap-3">
             <router-link :to="link.route" class="text-decoration-none text-white" v-for="(link, index) in links"
                 :key="index">{{ link.name }}</router-link>
@@ -29,12 +31,9 @@ export default {
         return {
             links: [
                 { name: 'Home', route: '/' },
-                { name: 'About Us', route: '/' },
-                { name: 'Features', route: '/' },
-                { name: 'Gallery', route: '/' },
-                { name: 'Team', route: '/' },
-                { name: 'Pricing', route: '/' },
-                { name: 'Contact', route: '/' },
+                { name: 'About Us', route: '/about-us' },
+                { name: 'Contact Us', route: '/contact-us' },
+                { name: 'Career', route: '/career' },
             ]
         }
     }

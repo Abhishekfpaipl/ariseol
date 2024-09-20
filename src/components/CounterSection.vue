@@ -47,16 +47,4 @@
 export default {
     name: 'CounterSection'
 }
-</script>
-<style scoped>
-.before-enter {
-    opacity: 0;
-    transform: translateY(80px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-}
-
-.enter {
-    opacity: 1;
-    transform: translateY(0);
-}
-</style>
+</script> 

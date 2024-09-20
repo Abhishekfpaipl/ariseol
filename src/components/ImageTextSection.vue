@@ -1,78 +1,67 @@
 <template>
     <div class="container my-5">
-        <h2 class="text-primary mb-5 text-start display-5">CHECK OUR DETAILS</h2>
+        <h2 class="mb-5 text-start display-5" style="color: var(--bg-primary);">CHECK OUR DETAILS</h2>
         <div class="row mb-5">
-            <div class="col-md-6" v-observe :class="imageClass('right')">
-                <img src="https://img.freepik.com/premium-photo/oil-pump-setting-sun-oil-industry-fossil-fuel-extraction-industrial-sunset-landscape_436068-5121.jpg?w=996"
-                    alt="Illustration" class="img-fluid">
-                <!-- freepik link -->
-                <!-- https://www.freepik.com/premium-ai-image/oil-pump-setting-sun-oil-industry-fossil-fuel-extraction-industrial-sunset-landscape_281849067.htm#fromView=search&page=2&position=20&uuid=2f873023-c4ef-479f-8c64-155a5ba5a7f0 -->
-                <!-- freepik link -->
+            <div class="col-md-6" v-observe>
+                <img src="/img/gallery/1.jpg" alt="Illustration" class="img-fluid">
 
             </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center mt-4 mt-md-0 text-start" v-observe
-                :class="textClass('right')">
-                <h3 class="text-primary mb-3">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
-                </h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-md-6 d-flex flex-column justify-content-center mt-4 mt-md-0 text-start" v-observe>
+                <h3 class=" mb-3" style="color: var(--bg-primary);">High-Performance Industrial Oils for Enhanced
+                    Efficiency</h3>
+                <p class="mb-4">Our range of industrial oils is designed to meet the demands of various industries,
+                    offering superior lubrication, reduced friction, and enhanced equipment longevity.</p>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <i class="bi bi-check2 text-primary me-2"></i>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <i class="bi bi-check2  me-2" style="color: var(--bg-primary);"></i>
+                        Optimized for heavy-duty machinery, ensuring smooth operation under extreme conditions.
                     </li>
                     <li class="mb-2">
-                        <i class="bi bi-check2 text-primary me-2"></i>
-                        Duis aute irure dolor in reprehenderit in voluptate velit.
+                        <i class="bi bi-check2   me-2" style="color: var(--bg-primary);"></i>
+                        Formulated to reduce energy consumption and minimize equipment wear.
                     </li>
                     <li class="mb-2">
-                        <i class="bi bi-check2 text-primary me-2"></i>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <i class="bi bi-check2   me-2" style="color: var(--bg-primary);"></i>
+                        Provides superior protection against rust, corrosion, and oxidation.
                     </li>
                 </ul>
             </div>
+
         </div>
 
-        <!-- Second Row -->
         <div class="row mb-5">
-            <div class="col-md-6 order-md-2" v-observe :class="imageClass('right')">
-                <img src="https://img.freepik.com/free-vector/oil-prices-industry_24877-50042.jpg?t=st=1724484767~exp=1724488367~hmac=e2b1da6e9b755b0e30bec0eedc2f75509776ae2063a4b6fe7112566a3966d631&w=740"
-                    alt="Illustration" class="img-fluid">
+            <div class="col-md-6 order-md-2" v-observe>
+                <img src="/img/gallery/10.jpg" alt="Illustration" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center text-start" v-observe>
+                <h3 class=" mb-3" style="color: var(--bg-primary);">Advanced Industrial Grease for Heavy-Duty
+                    Applications</h3>
+                <p class="mb-4">Our industrial greases are engineered to provide superior protection and performance in
+                    the most demanding environments, ensuring machinery runs smoothly and efficiently.</p>
+                <p>Formulated to withstand extreme temperatures and high loads, our grease minimizes friction, reduces
+                    wear, and extends the lifespan of your equipment. It offers excellent water resistance and corrosion
+                    protection, making it ideal for industrial applications such as manufacturing, mining, and
+                    construction.</p>
+            </div>
 
-                <!-- freepik link -->
-                <!--https://www.freepik.com/free-vector/oil-prices-industry_4875124.htm#fromView=search&page=2&position=21&uuid=2f873023-c4ef-479f-8c64-155a5ba5a7f0 -->
-                <!-- freepik link -->
-            </div>
-            <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center text-start" v-observe
-                :class="textClass('left')">
-                <h3 class="text-primary mb-3">Corporis temporibus maiores provident</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
         </div>
 
         <div class="row mb-5">
             <div class="col-md-6" v-observe :class="imageClass('left')">
-                <img src="https://img.freepik.com/premium-photo/hand-with-red-glove-that-has-liquid-dripping-out-it_605423-153131.jpg?w=996"
-                    alt="Illustration" class="img-fluid">
-
-                <!-- freepik link -->
-                <!-- https://www.freepik.com/premium-ai-image/hand-with-red-glove-that-has-liquid-dripping-out-it_247544512.htm#fromView=search&page=1&position=27&uuid=66ade2e6-0f2b-4b6b-9489-dbca381bbf7a -->
-                <!-- freepik link -->
-
+                <img src="/img/gallery/3.jpg" alt="Illustration" class="img-fluid">
             </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center text-start" v-observe
-                :class="textClass('right')">
-                <h3 class="text-primary mb-3">Corporis temporibus maiores provident</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-6 d-flex flex-column justify-content-center text-start" v-observe>
+                <h3 class=" mb-3" style="color: var(--bg-primary);">Leaders in Oil and Grease Manufacturing</h3>
+                <p class="mb-4">Our industry is at the forefront of producing high-performance oils and greases that
+                    meet the demands of various sectors, from automotive to heavy machinery and industrial equipment.
+                </p>
+                <p>We specialize in advanced formulations that enhance machinery efficiency, reduce wear, and extend the
+                    lifespan of equipment. Our products are designed to operate under extreme conditions, providing
+                    reliable lubrication, protection against corrosion, and optimal performance for a wide range of
+                    applications. With a focus on sustainability, we continuously innovate to deliver solutions that
+                    help reduce energy consumption and environmental impact.</p>
             </div>
+
         </div>
     </div>
 </template>
@@ -97,21 +86,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.before-enter-left {
-    opacity: 0;
-    transform: translateX(-80px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-}
-
-.before-enter-right {
-    opacity: 0;
-    transform: translateX(80px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-}
-
-.enter {
-    opacity: 1;
-    transform: translateX(0);
-}
-</style>
+<style scoped></style>

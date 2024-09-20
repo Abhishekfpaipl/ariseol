@@ -1,11 +1,16 @@
 <template>
     <div class="container mt-4">
+        <div class="text-start mb-5">
+            <p class="text-muted mb-1 text-uppercase">Industry</p>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Industries we provide our services
+            </h2>
+        </div>
         <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div v-for="(item, index) in items" :key="index" class="col">
+            <div v-for="(item, index) in links" :key="index" class="col">
                 <div class="card h-100 border rounded-0" v-observe>
                     <div class="card-body d-flex align-items-center">
-                        <i :class="item.icon" :style="{ color: item.color }"></i>
-                        <span class="ms-3 fw-bold">{{ item.text }}</span>
+                        <img :src="item.image" :alt="item.name" style="height: 50px; width: 50px; object-fit: contain;">
+                        <span class="ms-3 fw-bold">{{ item.name }}</span>
                     </div>
                 </div>
             </div>
@@ -17,19 +22,19 @@
 export default {
     data() {
         return {
-            items: [
-                { icon: 'bi bi-eye', color: '#FFA500', text: 'Lorem Ipsum' },
-                { icon: 'bi bi-infinity', color: '#4169E1', text: 'Dolor Sitema' },
-                { icon: 'bi bi-mortarboard', color: '#FF1493', text: 'Sed perspiciatis' },
-                { icon: 'bi bi-hexagon', color: '#FF00FF', text: 'Magni Dolores' },
-                { icon: 'bi bi-shuffle', color: '#87CEEB', text: 'Nemo Enim' },
-                { icon: 'bi bi-star', color: '#FFA07A', text: 'Eiusmod Tempor' },
-                { icon: 'bi bi-diamond', color: '#00CED1', text: 'Midela Teren' },
-                { icon: 'bi bi-camera-video', color: '#4169E1', text: 'Pira Neve' },
-                { icon: 'bi bi-diagram-3', color: '#DAA520', text: 'Dirada Pack' },
-                { icon: 'bi bi-x-circle', color: '#DC143C', text: 'Moton Ideal' },
-                { icon: 'bi bi-activity', color: '#FF4500', text: 'Verdo Park' },
-                { icon: 'bi bi-brightness-high', color: '#32CD32', text: 'Flavor Nivelanda' }
+            links: [
+                { id: 1, name: 'Steel', image: "/img/industry/steel.png", },
+                { id: 2, name: 'Aluminium Cable', image: "/img/industry/aluminium-cable.png", },
+                { id: 3, name: 'Biodegradable', image: "/img/industry/bio.png", },
+                { id: 4, name: 'Cement', image: "/img/industry/cement.png", },
+                { id: 5, name: 'Crusher', image: "/img/industry/crusher.png", },
+                { id: 6, name: 'Engineering', image: "/img/industry/engineering.png", },
+                { id: 7, name: 'Mining', image: "/img/industry/mining.png", },
+                { id: 8, name: 'Paper', image: "/img/industry/paper.png", },
+                { id: 9, name: 'Pharma', image: "/img/industry/pharma.png", },
+                { id: 10, name: 'Sugar', image: "/img/industry/sugar.png", },
+                { id: 11, name: 'Wind Mill', image: "/img/industry/wind-mill.png", },
+
             ]
         };
     }
@@ -39,16 +44,5 @@ export default {
 <style scoped>
 .card-body i {
     font-size: 1.5rem;
-}
-
-.before-enter {
-    opacity: 0;
-    transform: translateX(80px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-}
-
-.enter {
-    opacity: 1;
-    transform: translateX(0);
 }
 </style>

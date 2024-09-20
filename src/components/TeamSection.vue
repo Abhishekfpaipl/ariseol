@@ -1,8 +1,8 @@
 <template>
     <div class="container my-5 pb-4">
         <div class="text-start mb-5">
-            <p class="text-muted mb-1">TEAM</p>
-            <h2 class="display-5 text-primary">CHECK OUR TEAM</h2>
+            <p class="text-muted text-uppercase mb-1">TEAM</p>
+            <h2 class="display-5 text-uppercase " style="color: var(--bg-primary);">CHECK OUR TEAM</h2>
         </div>
 
         <!-- <div class="row">

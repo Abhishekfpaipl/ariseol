@@ -8,7 +8,7 @@
     <AboutSection />
     <GallerySection />
     <TeamSection />
-    <TimelineSection />
+    <TestimonialSection />
     <CareerSection />
     <ContactSection />
   </div>
@@ -24,7 +24,7 @@ import ProductSection from "@/components/ProductSection.vue";
 import TeamSection from "@/components/TeamSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
-import TimelineSection from "@/components/TimelineSection.vue";
+import TestimonialSection from "@/components/TestimonialSection.vue";
 import CareerSection from "@/components/CareerSection.vue";
 
 export default {
@@ -39,8 +39,8 @@ export default {
     TeamSection,
     ContactSection,
     AboutSection,
-    TimelineSection,
     CareerSection,
+    TestimonialSection,
   },
 };
 </script>
