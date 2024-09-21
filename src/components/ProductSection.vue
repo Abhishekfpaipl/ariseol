@@ -28,24 +28,24 @@ export default {
     data() {
         return {
             products: [
-                {
-                    title: 'Greases',
-                    image: 'https://clgoilindia.com/demo/assets/images/service/Grease-01.jpg',
-                    description: 'We are engaged in offering a wide range of good Quality to our clients.',
-                    expanded: false
-                },
+                // {
+                //     title: 'Greases',
+                //     image: 'https://clgoilindia.com/demo/assets/images/service/Grease-01.jpg',
+                //     description: 'We are engaged in offering a wide range of good Quality to our clients.',
+                //     expanded: false
+                // },
                 {
                     title: 'Automotive Lubricants',
                     image: 'https://clgoilindia.com/demo/assets/images/service/Grease-02.jpg',
                     description: 'High-quality lubricants for all types of vehicles.',
                     expanded: false
                 },
-                {
-                    title: 'Industrial Lubricants',
-                    image: 'https://clgoilindia.com/demo/assets/images/service/Grease-03.jpg',
-                    description: 'Specialized lubricants for industrial machinery and equipment.',
-                    expanded: false
-                }
+                // {
+                //     title: 'Industrial Lubricants',
+                //     image: 'https://clgoilindia.com/demo/assets/images/service/Grease-03.jpg',
+                //     description: 'Specialized lubricants for industrial machinery and equipment.',
+                //     expanded: false
+                // }
             ]
         }
     },

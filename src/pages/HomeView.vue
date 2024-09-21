@@ -1,8 +1,7 @@
 <template>
   <div class="mt-2" style="padding-top: 64px;">
     <CarouselBanner />
-    <CounterSection />
-    <CardSection />
+    <!-- <CardSection /> -->
     <ImageTextSection />
     <ProductSection />
     <AboutSection />
@@ -17,8 +16,7 @@
 <script>
 import CarouselBanner from "@/components/CarouselBanner.vue";
 import GallerySection from "@/components/GallerySection.vue";
-import CounterSection from "@/components/CounterSection.vue";
-import CardSection from "@/components/CardSection.vue";
+// import CardSection from "@/components/CardSection.vue";
 import ImageTextSection from "@/components/ImageTextSection.vue";
 import ProductSection from "@/components/ProductSection.vue";
 import TeamSection from "@/components/TeamSection.vue";
@@ -32,8 +30,7 @@ export default {
   components: {
     CarouselBanner,
     GallerySection,
-    CounterSection,
-    CardSection,
+    // CardSection,
     ImageTextSection,
     ProductSection,
     TeamSection,
