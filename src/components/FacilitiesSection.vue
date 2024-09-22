@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div class="container my-5">
         <div class="row" v-for="(day, index) in test" :key="index">
             <div class="col-12 mb-4">
                 <div class="card">
-                    <div class="card-header fw-bold text-bg-light text-capitalize">
+                    <div class="p-2 fw-bold text-bg-light text-capitalize">
                         {{ day.type }}
                     </div>
                     <div class="card-body">

@@ -55,6 +55,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .text-ellipsis4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -81,4 +82,9 @@ export default {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+#scroll::-webkit-scrollbar {
+  display: none;
+}
+
 </style>

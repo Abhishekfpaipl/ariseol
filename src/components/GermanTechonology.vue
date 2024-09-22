@@ -1,20 +1,20 @@
 <template>
     <div class="container my-5">
         <div class="text-start mb-5">
-            <!-- <p class="text-muted mb-1 text-uppercase">Products</p> -->
+            <p class="text-muted mb-1 text-uppercase">Ariseol Lubricants</p>
             <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">GERMAN MOTOR OIL TECHNOLOGY</h2>
         </div>
         <div class="row text-start g-1">
             <div class="col-md-6">
                 <p class="mb-4">
-                    V8 German Motor Oil is a leading force in the global lubrication industry, dedicated to producing
+                    Ariseol German Motor Oil is a leading force in the global lubrication industry, dedicated to producing
                     cutting-edge motor oils that enhance engine performance, efficiency, and durability. Whether for
                     personal vehicles or heavy-duty industrial machinery, our products are crafted to meet the
                     demanding requirements of modern engines.
                 </p>
                 <p class="mb-4">
                     As the demand for high-performance lubricants continues to rise, driven by advancements in
-                    automotive technology and stringent environmental standards, V8 German Motor Oil stands at the
+                    automotive technology and stringent environmental standards, Ariseol German Motor Oil stands at the
                     forefront of innovation. Our range includes premium engine oils, transmission fluids, and
                     high-performance greases that provide superior protection and boost fuel efficiency.
                 </p>

@@ -89,14 +89,14 @@ export default {
 }
 </script> -->
 <template>
-    <div class="container my-5">
+    <div class="container mb-5">
         <p v-if="title" class="mb-5 text-start display-5" style="color: var(--bg-primary);">{{ title }}</p>
-        <div class="row">
+        <div class="row justify-contnet-center align-items-center">
             <div :class="imageFirst ? 'col-md-6 order-1' : 'col-md-6 order-2'">
                 <img :src="imageSrc" :alt="imageAlt" class="img-fluid" />
             </div>
             <div
-                :class="imageFirst ? 'col-md-6 order-2 mt-5 mt-md-0 bg-light px-3 py-2' : 'col-md-6 order-1 mb-4 mb-md-0 bg-light px-3 py-2'">
+                :class="imageFirst ? 'col-md-6 order-2 mt-5 mt-md-0 px-3 py-2' : 'col-md-6 order-1 mb-4 mb-md-0 px-3 py-2'">
                 <h2 v-if="heading" class="text-start">{{ heading }}</h2>
                 <p v-if="subHeading" class="text-start text-uppercase">{{ subHeading }}</p>
                 <p v-if="text" class="text-start">{{ text }}</p>

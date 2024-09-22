@@ -1,10 +1,10 @@
 <template>
-  <div class="mt-2" style="padding-top: 64px;">
+  <div class="" style="padding-top: 64px;">
     <CarouselBanner />
-    <CardSection />
-    <ImageSection />
+    <!-- <CardSection /> -->
+    <!-- <ImageSection /> -->
 
-    <ImageTextSection image-src="/img/gallery/1.jpg" heading="High-Performance Industrial Oils for Enhanced Efficiency"
+    <!-- <ImageTextSection image-src="/img/gallery/1.jpg" heading="High-Performance Industrial Oils for Enhanced Efficiency"
       subHeading="Our range of industrial oils is designed to meet the demands of various industries, offering superior lubrication, reduced friction, and enhanced equipment longevity."
       :points="points" image-alt="gallery" :imageFirst="true" />
 
@@ -21,13 +21,18 @@
                     lifespan of equipment. Our products are designed to operate under extreme conditions, providing
                     reliable lubrication, protection against corrosion, and optimal performance for a wide range of
                     applications. With a focus on sustainability, we continuously innovate to deliver solutions that
-                    help reduce energy consumption and environmental impact." image-alt="gallery" :imageFirst="true" />
+                    help reduce energy consumption and environmental impact." image-alt="gallery" :imageFirst="true" /> -->
+    <div class="container">
+      <div class="text-start mb-5">
+        <p class="text-muted mb-1 text-uppercase">Ariseol Lubricants</p>
+        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Precision Engineered with Nanotechnology
+        </h2>
+      </div>
+      <ImageTextSection image-src="https://ilindia.idemitsu.com/landingpage/assets/images/irg/nto-ifve.png"
+        text="At Ariseol, we harness cutting-edge nanotechnology to engineer lubricants with unparalleled precision—down to a millionth of a millimeter. Even the most polished gears have microscopic imperfections, and our advanced electron microscopes allow us to inspect and refine lubricants at the nanoscale. This ensures that our products provide optimal performance, reducing friction and wear at the most minute level. Since our founding in 1911, we’ve been committed to this level of precision, continuously developing solutions tailored to meet the specific needs of our customers. With over a century of expertise, we remain at the forefront of innovation, ensuring our lubricants not only meet but exceed industry standards."
+        image-alt="gallery" :imageFirst="false" />
 
-    <ImageTextSection image-src="https://ilindia.idemitsu.com/landingpage/assets/images/irg/nto-ifve.png"
-      heading="Ariseol Lubricants" subHeading=" Precision Engineered with Nanotechnology"
-      text="At Ariseol, we harness cutting-edge nanotechnology to engineer lubricants with unparalleled precision—down to a millionth of a millimeter. Even the most polished gears have microscopic imperfections, and our advanced electron microscopes allow us to inspect and refine lubricants at the nanoscale. This ensures that our products provide optimal performance, reducing friction and wear at the most minute level. Since our founding in 1911, we’ve been committed to this level of precision, continuously developing solutions tailored to meet the specific needs of our customers. With over a century of expertise, we remain at the forefront of innovation, ensuring our lubricants not only meet but exceed industry standards."
-      image-alt="gallery" :imageFirst="false" />
-
+    </div>
     <!-- <ImageTextSection /> -->
     <GermanTechonology />
     <GermanPerformance />
@@ -35,7 +40,7 @@
     <FeaturesSection />
     <WeAreAriseol />
     <OurAdvantages />
-    <ProductCard/>
+    <ProductCard />
     <AboutSection />
     <GallerySection />
     <TeamSection />
@@ -47,14 +52,14 @@
 <script>
 import CarouselBanner from "@/components/CarouselBanner.vue";
 import GallerySection from "@/components/GallerySection.vue";
-import CardSection from "@/components/CardSection.vue";
+// import CardSection from "@/components/CardSection.vue";
 import ImageTextSection from "@/components/ImageTextSection.vue";
-import ProductSection from "@/components/ProductSection.vue";
+// import ProductSection from "@/components/ProductSection.vue";
 import TeamSection from "@/components/TeamSection.vue";
-import ContactSection from "@/components/ContactSection.vue";
+// import ContactSection from "@/components/ContactSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
 import TestimonialSection from "@/components/TestimonialSection.vue";
-import ImageSection from "@/components/ImageSection.vue";
+// import ImageSection from "@/components/ImageSection.vue";
 import FeaturesSection from "@/components/FeaturesSection.vue";
 import WeAreAriseol from "@/components/WeAreAriseol.vue";
 import OurAdvantages from "@/components/OurAdvantages.vue";
@@ -67,12 +72,12 @@ export default {
   components: {
     CarouselBanner,
     GallerySection,
-    ImageSection,
-    CardSection,
+    // ImageSection,
+    // CardSection,
     ImageTextSection,
-    ProductSection,
+    // ProductSection,
     TeamSection,
-    ContactSection,
+    // ContactSection,
     AboutSection,
     TestimonialSection,
     FeaturesSection,

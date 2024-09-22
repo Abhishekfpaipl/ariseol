@@ -1,9 +1,8 @@
 <template>
   <div>
     <router-link to="/products" class="text-decoration-none text-dark">
-      <img src="/img/banner/1.jpg" class="d-md-block d-none w-100"
-        style="height: 600px;object-fit: cover;object-position: center;" alt="">
-      <img src="/img/banner/1.jpg" class="d-md-none d-block w-100" alt="">
+      <img src="/img/banner/desktop.jpg" class="d-md-block d-none w-100" alt="Banner">
+      <img src="/img/banner/mobile.jpg" class="d-md-none d-block w-100" alt="Banner">
     </router-link>
   </div>
   <div class="container my-5" v-observe>

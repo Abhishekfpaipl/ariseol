@@ -34,6 +34,7 @@ export default {
                 { name: 'About Us', route: '/about-us' },
                 { name: 'Contact Us', route: '/contact-us' },
                 { name: 'Career', route: '/career' },
+                { name: 'Benefit', route: '/benefit' },
             ]
         }
     }

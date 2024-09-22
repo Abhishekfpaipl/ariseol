@@ -53,20 +53,20 @@ export default {
                 {
                     id: 1,
                     name: 'Walter White',
-                    position: 'Chief Executive Officer',
-                    image: 'https://bootstrapmade.com/demo/templates/Bootslander/assets/img/team/team-1.jpg'
+                    position: 'Founder & Owner',
+                    image: '/img/founder.jpg'
                 },
                 {
                     id: 2,
-                    name: 'Sarah Jhonson',
-                    position: 'Product Manager',
-                    image: 'https://bootstrapmade.com/demo/templates/Bootslander/assets/img/team/team-2.jpg'
+                    name: 'John Brown',
+                    position: 'Chief Executive Officer',
+                    image: '/img/ceo.jpg'
                 },
                 {
                     id: 3,
                     name: 'William Anderson',
-                    position: 'CTO',
-                    image: 'https://bootstrapmade.com/demo/templates/Bootslander/assets/img/team/team-3.jpg'
+                    position: 'Chief Marketing Officer',
+                    image: '/img/cmo.jpg'
                 }
             ]
         }
