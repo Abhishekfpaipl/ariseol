@@ -8,10 +8,10 @@
             company Specialized in the manufacturing and marketing of performance products. For more than 150 years,
             Airseol has been synonymous with: </p>
         <div class="row g-2">
-            <div class="col" v-for="(card, index) in cards" :key="index">
-                <div class="card rounded-0 h-100 p-3" style="background-color: var(--bg-primary);">
-                    <i :class="card.icon" class="fs-1 primary-text"></i>
-                    <p class="text-center fs-5 fw-bold">{{ card.title }}</p>
+            <div class="col-12" v-for="(card, index) in cards" :key="index">
+                <div class="d-flex align-items-center gap-3">
+                    <i :class="card.icon" class="fs-1 primary-text text-start"></i>
+                    <span class="text-center fs-5 fw-bold">{{ card.title }}</span>
                 </div>
             </div>
         </div>

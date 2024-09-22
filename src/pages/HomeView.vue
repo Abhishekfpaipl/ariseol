@@ -21,8 +21,12 @@
                     lifespan of equipment. Our products are designed to operate under extreme conditions, providing
                     reliable lubrication, protection against corrosion, and optimal performance for a wide range of
                     applications. With a focus on sustainability, we continuously innovate to deliver solutions that
-                    help reduce energy consumption and environmental impact." image-alt="gallery"
-      :imageFirst="true" />
+                    help reduce energy consumption and environmental impact." image-alt="gallery" :imageFirst="true" />
+
+    <ImageTextSection image-src="https://ilindia.idemitsu.com/landingpage/assets/images/irg/nto-ifve.png"
+      heading="Ariseol Lubricants" subHeading=" Precision Engineered with Nanotechnology"
+      text="At Ariseol, we harness cutting-edge nanotechnology to engineer lubricants with unparalleled precision—down to a millionth of a millimeter. Even the most polished gears have microscopic imperfections, and our advanced electron microscopes allow us to inspect and refine lubricants at the nanoscale. This ensures that our products provide optimal performance, reducing friction and wear at the most minute level. Since our founding in 1911, we’ve been committed to this level of precision, continuously developing solutions tailored to meet the specific needs of our customers. With over a century of expertise, we remain at the forefront of innovation, ensuring our lubricants not only meet but exceed industry standards."
+      image-alt="gallery" :imageFirst="false" />
 
     <!-- <ImageTextSection /> -->
     <GermanTechonology />
@@ -31,6 +35,7 @@
     <FeaturesSection />
     <WeAreAriseol />
     <OurAdvantages />
+    <ProductCard/>
     <AboutSection />
     <GallerySection />
     <TeamSection />
@@ -55,6 +60,7 @@ import WeAreAriseol from "@/components/WeAreAriseol.vue";
 import OurAdvantages from "@/components/OurAdvantages.vue";
 import GermanTechonology from "@/components/GermanTechonology.vue";
 import GermanPerformance from "@/components/GermanPerformance.vue";
+// import ProductCard from "@/components/ProductCard.vue";
 
 export default {
   name: "HomeView",
@@ -74,6 +80,7 @@ export default {
     OurAdvantages,
     GermanTechonology,
     GermanPerformance,
+    // ProductCard,
   },
   data() {
     return {

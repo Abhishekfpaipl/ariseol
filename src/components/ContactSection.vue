@@ -28,7 +28,12 @@
                         <div class="col-md-6 form-floating">
                             <input type="email" class="form-control" id="Email" placeholder="Your Email"
                                 v-model="form.email" required>
-                            <label for="Email" class="ms-2 text-muted">Your Name</label>
+                            <label for="Email" class="ms-2 text-muted">Your Email</label>
+                        </div>
+                        <div class="col-md-12 form-floating">
+                            <input type="number" class="form-control" id="Number" placeholder="Your Number"
+                                v-model="form.number" required>
+                            <label for="Number" class="ms-2 text-muted">Your Number</label>
                         </div>
                         <div class="col-12 form-floating">
                             <input type="email" class="form-control" id="Subject" placeholder="Subject"
@@ -58,7 +63,8 @@ export default {
                 name: '',
                 email: '',
                 subject: '',
-                message: ''
+                message: '',
+                number:'',
             },
             links: [
                 {

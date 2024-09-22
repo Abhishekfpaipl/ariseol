@@ -2,40 +2,42 @@
     <div class="container my-5">
         <div class="text-start mb-5">
             <!-- <p class="text-muted mb-1 text-uppercase">Products</p> -->
-            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">GERMAN LUBRICANTS TECHNOLOGY</h2>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">GERMAN MOTOR OIL TECHNOLOGY</h2>
         </div>
         <div class="row text-start g-1">
             <div class="col-md-6">
                 <p class="mb-4">
-                    V8 German Lubricants is a global lubricants industry, committed to delivering high-quality,
-                    innovative products that enhance the performance and longevity of machinery across various sectors.
-                    From automotive to industrial applications, our range of lubricants is designed to meet the diverse
-                    needs of our customers, ensuring optimal efficiency and protection.
+                    V8 German Motor Oil is a leading force in the global lubrication industry, dedicated to producing
+                    cutting-edge motor oils that enhance engine performance, efficiency, and durability. Whether for
+                    personal vehicles or heavy-duty industrial machinery, our products are crafted to meet the
+                    demanding requirements of modern engines.
                 </p>
                 <p class="mb-4">
-                    The global lubricants market is experiencing significant growth, fueled by rapid industrialization,
-                    increasing automotive production, and the rising demand for superior lubrication solutions. V8
-                    German Lubricants is proud to be a key player in this dynamic industry, offering a comprehensive
-                    selection of products, including engine oils, transmission fluids, and specialty greases.
+                    As the demand for high-performance lubricants continues to rise, driven by advancements in
+                    automotive technology and stringent environmental standards, V8 German Motor Oil stands at the
+                    forefront of innovation. Our range includes premium engine oils, transmission fluids, and
+                    high-performance greases that provide superior protection and boost fuel efficiency.
                 </p>
                 <p class="mb-4">
-                    We are particularly focused on the latest trends and technological advancements, including the
-                    development of synthetic and bio-based lubricants that offer exceptional performance while being
-                    environmentally friendly. Our commitment to innovation extends to adopting advanced technologies
-                    that monitor lubricant performance, enabling predictive maintenance and reducing downtime for our
-                    customers.
+                    With a focus on the latest industry trends, we specialize in developing synthetic and eco-friendly
+                    bio-based oils that reduce environmental impact without compromising on quality. Our
+                    state-of-the-art
+                    technologies enable precise monitoring of oil performance, helping customers to extend engine life,
+                    minimize maintenance costs, and reduce downtime.
                 </p>
                 <div class="mt-4">
-                    <button class="btn rounded-0 me-3 mb-2 text-white" style="background-color: var(--bg-primary);">Get a
+                    <button class="btn rounded-0 me-3 mb-2 text-white" style="background-color: var(--bg-primary);">Get
+                        a
                         Quote</button>
-                    <button class="btn rounded-0 me-3 mb-2 text-white" style="background-color: var(--bg-primary);">Become a
-                        Distributor</button>
+                    <router-link to="/dealership" class="btn rounded-0 me-3 mb-2 text-white"
+                        style="background-color: var(--bg-primary);">Become a
+                        Distributor</router-link>
                     <button class="btn rounded-0 mb-2 text-white" style="background-color: var(--bg-primary);">Check Our
                         Products</button>
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-end">
-                <img src="/img/german.png" alt="">
+                <img src="/img/german.png" alt="" class="" style="width:100%; height: 500px; object-fit: contain;">
             </div>
         </div>
     </div>

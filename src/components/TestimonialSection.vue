@@ -17,10 +17,10 @@
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container bg-light border position-relative rounded p-2">
+                        <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
+                                    <div class="rounded-circle overflow-hidden border border-white bg-light border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
@@ -39,10 +39,10 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container bg-light border position-relative rounded p-2">
+                        <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
+                                    <div class="rounded-circle overflow-hidden border border-white bg-light border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
@@ -52,7 +52,7 @@
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
                                     <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
-                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
+                                    <p class="text-dark smaller mb-0 text-ellipsis3">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -62,10 +62,10 @@
             <div class="marquee marquee--reverse" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container bg-light border position-relative rounded p-2">
+                        <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
+                                    <div class="rounded-circle overflow-hidden border border-white bg-light border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
@@ -75,7 +75,7 @@
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
                                     <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
-                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
+                                    <p class="text-dark smaller mb-0 text-ellipsis3">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -84,10 +84,10 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container bg-light border position-relative rounded p-2">
+                        <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
+                                    <div class="rounded-circle overflow-hidden border border-white bg-light border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
@@ -97,7 +97,7 @@
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
                                     <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
-                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
+                                    <p class="text-dark smaller mb-0 text-ellipsis3">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -107,10 +107,10 @@
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container bg-light border position-relative rounded p-2">
+                        <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
+                                    <div class="rounded-circle overflow-hidden border border-white bg-light border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
@@ -120,7 +120,7 @@
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
                                     <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
-                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
+                                    <p class="text-dark smaller mb-0 text-ellipsis3">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -129,10 +129,10 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container bg-light border position-relative rounded p-2">
+                        <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
+                                    <div class="rounded-circle overflow-hidden border border-white bg-light border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
@@ -142,7 +142,7 @@
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
                                     <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
-                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
+                                    <p class="text-dark smaller mb-0 text-ellipsis3">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>

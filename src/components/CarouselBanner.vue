@@ -6,19 +6,22 @@
       <img src="/img/banner/1.jpg" class="d-md-none d-block w-100" alt="">
     </router-link>
   </div>
-  <div class="container" style="margin-top: -50px;" v-observe>
-    <div class="row">
-      <div class="col-md-4 mb-4" v-for="(card, index) in cards" :key="index">
-        <div class="card rounded-0 position-relative border-0">
-          <div class="overlay"></div>
-          <div class="d-flex justify-content-center align-items-center">
-            <i v-if="card.icon" :class="card.icon" class="fs-1"></i>
-          </div>
-          <p class="card-title fs-1">{{ card.title }}</p>
-          <p class="card-text">{{ card.description }}</p>
-          <p class="smaller">Compared to conventional engine oil</p>
+  <div class="container my-5" v-observe>
+    <div class="row g-1">
+      <div class="col-4 mb-4" v-for="(card, index) in cards" :key="index">
+        <div class="card rounded-0 position-relative border-0 p-2 text-white bg-dark">
+          <i v-if="card.icon" :class="card.icon" class="fs-1 primary-text"></i>
+          <!-- <div class="d-flex justify-content-center align-items-center">
+            <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+              style="width: 50px; height: 50px;">
+            </div>
+          </div> -->
+          <p class="card-text smaller mb-1 text-uppercase">{{ card.description }}</p>
+          <p class="card-title mb-0"><span class="fs-1">{{ card.title }}</span> <span class="small">%</span></p>
+          <p class="text-center smaller">PLUS</p>
         </div>
       </div>
+      <div class="col-12 text-muted">Compared to conventional engine oil</div>
     </div>
   </div>
 </template>
@@ -29,19 +32,19 @@ export default {
     return {
       cards: [
         {
-          title: '11%',
+          title: '11',
           description: "Torque",
           icon: 'bi bi-lightning-fill',
           backgroundImage: '/img/update.jpg',
         },
         {
-          title: '22%',
-          description: 'Performance Consistency',
+          title: '22',
+          description: 'Performance ',
           backgroundImage: '/img/grease.jpg',
           icon: 'bi bi-star-fill',
         },
         {
-          title: '61%',
+          title: '61',
           description: "Protection",
           icon: 'bi bi-shield-fill',
           backgroundImage: '/img/industry.jpg',
