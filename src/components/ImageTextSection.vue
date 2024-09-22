@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="container my-5">
         <h2 class="mb-5 text-start display-5" style="color: var(--bg-primary);">CHECK OUR DETAILS</h2>
         <div class="row mb-5">
@@ -69,6 +69,9 @@
 <script>
 export default {
     name: 'ImageTextSection',
+    props: {
+
+    },
     methods: {
         imageClass(position) {
             return {
@@ -84,6 +87,76 @@ export default {
         }
     }
 }
+</script> -->
+<template>
+    <div class="container my-5">
+        <p v-if="title" class="mb-5 text-start display-5" style="color: var(--bg-primary);">{{ title }}</p>
+        <div class="row">
+            <div :class="imageFirst ? 'col-md-6 order-1' : 'col-md-6 order-2'">
+                <img :src="imageSrc" :alt="imageAlt" class="img-fluid" />
+            </div>
+            <div
+                :class="imageFirst ? 'col-md-6 order-2 mt-5 mt-md-0 bg-light px-3 py-2' : 'col-md-6 order-1 mb-4 mb-md-0 bg-light px-3 py-2'">
+                <h2 v-if="heading" class="text-start">{{ heading }}</h2>
+                <p v-if="subHeading" class="text-start text-uppercase">{{ subHeading }}</p>
+                <p v-if="text" class="text-start">{{ text }}</p>
+                <ul v-if="points" class="text-start">
+                    <li v-for="(point, index) in points" :key="index" class="mb-2">{{ point }}</li>
+                </ul>
+                <div v-if="button" class="d-flex justify-content-start">
+                    <router-link to="/about-us" class="text-decoration-none text-dark border-bottom pb-2">
+                        <span>View Complete Profile</span>
+                        <i class="bi bi-arrow-right ms-3"></i>
+                    </router-link>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        mobile: {
+            type: Number,
+        },
+        imageSrc: {
+            type: String,
+            required: true
+        },
+        imageAlt: {
+            type: String,
+            default: ''
+        },
+        title: {
+            type: String,
+        },
+        heading: {
+            type: String,
+        },
+        subHeading: {
+            type: String,
+        },
+        text: {
+            type: String,
+        },
+        imageFirst: {
+            type: Boolean,
+            default: true
+        },
+        points: {
+            type: Array,
+        },
+        button: {
+            type: Boolean,
+        }
+    }
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+</style>

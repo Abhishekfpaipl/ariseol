@@ -19,17 +19,18 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="card-header d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.title }}</p>
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p>
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} </p>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis3">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -40,17 +41,18 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="card-header d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.title }}</p>
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p>
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} </p>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -62,17 +64,18 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="card-header d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.title }}</p>
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p>
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} </p>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -83,17 +86,18 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="card-header d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.title }}</p>
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p>
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} </p>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -105,17 +109,18 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="card-header d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.title }}</p>
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p>
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} </p>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -126,17 +131,18 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="card-header d-flex flex-column justify-content-center align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
                                         style="width:60px; height:60px; margin-top:-40px;">
                                         <img :src="card.image" alt="Profile" class="rounded-circle"
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.title }}</p>
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p>
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} </p>
+                                    <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
+                                    <!-- <p class="fw-bold smaller mb-0 mt-0 text-ellipsis1">{{ card.subtitle }}</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis3 ">{{ card.review }} </p>
                                 </div>
                             </div>
                         </div>
@@ -167,51 +173,52 @@ export default {
                     title: 'USA',
                     name: 'John Doe',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'The motor oil significantly improved the efficiency of our fleet. We saw a notable reduction in engine wear and tear. Highly recommended for heavy-duty vehicles.',
                 },
                 {
                     image: 'img/flags/canada.svg',
                     title: 'Canada',
                     name: 'Emily Johnson',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'After switching to this motor oil, our trucks run smoother and maintenance costs have dropped. It’s the best oil we’ve used so far.',
                 },
                 {
                     image: 'img/flags/uk.svg',
                     title: 'UK',
                     name: 'Michael Smith',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'This oil offers superior engine protection, even in extreme weather conditions. Our vehicles have been running efficiently across all terrains.',
                 },
                 {
                     image: 'img/flags/australia.jpg',
                     title: 'Australia',
                     name: 'Sarah Williams',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'Since we started using this motor oil, the performance consistency of our machinery has been remarkable. Fuel consumption has decreased as well.',
                 },
                 {
                     image: 'img/flags/germany.svg',
                     title: 'Germany',
                     name: 'David Brown',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'Our industrial machines are running more efficiently with less frequent oil changes. This motor oil truly maximizes engine longevity.',
                 },
                 {
                     image: 'img/flags/france.jpg',
                     title: 'France',
                     name: 'Sophia Martin',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'Exceptional quality! The motor oil keeps our engines running like new, even under heavy load. It’s a trusted part of our maintenance routine.',
                 },
                 {
                     image: 'img/flags/japan.svg',
                     title: 'Japan',
                     name: 'Hiroshi Yamamoto',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
-                    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel dolor vel nisi bibendum maximus. Sed non velit in nunc euismod congue.'
+                    review: 'This motor oil provides excellent protection and enhances engine performance. We have seen extended service intervals and improved fuel efficiency.',
                 }
             ]
+
 
         };
     },
@@ -324,6 +331,9 @@ export default {
     }
 }
 
+.card {
+    height: 100%
+}
 
 .card-header {
     background: linear-gradient(180deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 95%);
@@ -336,31 +346,6 @@ export default {
 .card-body {
     padding: 20px;
     text-align: center;
-}
-
-.loan-type {
-    color: #ff6b6b;
-    margin-bottom: 10px;
-}
-
-
-.amount {
-    font-weight: bold;
-    color: #4ecdc4;
-}
-
-
-.name {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.rating {
-    color: gold;
-}
-
-.star::before {
-    content: "\2605";
 }
 
 .card-container {

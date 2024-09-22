@@ -1,20 +1,14 @@
 <template>
     <div class="container my-5">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
-            <div class="col"  v-for="(item, index) in items" :key="index">
-                <div class="row align-items-center mb-3 p-3">
-                    <div class="col-12">
-                        <i class="bi text-warning display-1" :class="item.icon"></i>
-                    </div>
-                    <div class="col-12">
-                        <span class="fs-1">{{ item.title }}</span>
-                    </div>
-                    <div class="col-12">
-                        <p class="small">{{ item.text }}
-                        </p>
-                    </div>
-                </div>
+            <div class="col" v-for="(item, index) in items" :key="index">
+                <a href="#" class="text-decoration-none card rounded-0 p-2 h-100 text-white" style="background-color: var(--bg-primary)">
+                    <i class="bi primary-text display-1" :class="item.icon"></i>
+                    <p class="fs-1">{{ item.title }}</p>
+                    <p class="small">{{ item.text }}
+                    </p>
 
+                </a>
             </div>
         </div>
 

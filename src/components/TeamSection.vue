@@ -23,19 +23,19 @@
             </div>
         </div> -->
         <div class="row gy-5" v-observe>
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" v-for="member in teamMembers" :key="member.id">
+            <div class="col-lg-4 col-md-6 mb-5" v-for="member in teamMembers" :key="member.id">
                 <div class="position-relative">
                     <div class="pic"><img :src="member.image" class="img-fluid" alt=""></div>
                     <div class="member-info bg-light">
                         <h4 class="text-start mb-1">{{ member.name }}</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <p class="text-start mb-0">{{ member.position }}</p>
-                            <div class="mt-3">
+                            <!-- <div class="mt-3">
                                 <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
                                 <a href="#" class="text-muted me-2"><i class="bi bi-facebook"></i></a>
                                 <a href="#" class="text-muted me-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -96,6 +96,7 @@ export default {
     overflow: hidden;
     transition: 0.5s;
 }
+
 .before-enter {
     opacity: 0;
     transform: translateY(80px);

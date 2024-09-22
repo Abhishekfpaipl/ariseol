@@ -7,14 +7,17 @@
         <div class="row">
             <div v-for="(product, index) in products" :key="index" class="col-md-4 mb-4" v-observe>
                 <!-- <div class="card product-card h-100" @mouseenter="expandCard(index)" @mouseleave="collapseCard(index)"> -->
-                <div class="card product-card h-100">
-                    <img :src="product.image" class="img-fluid" :alt="product.title">
-                    <div class="card-body d-flex flex-column">
-                        <div class="icon-wrapper mb-2">
-                            <i class="bi bi-gear-fill " style="color: var(--bg-primary);"></i>
+                <div class="card product-card h-100 rounded-0 shadow p-3 px-4">
+                    <p class="text-start fw-bold ">{{ product.title }}</p>
+                    <img :src="product.image" class="img-fluid" style="height: 300px;object-fit: cover;"
+                        :alt="product.title">
+                    <div class="card-body d-flex flex-column px-0">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <button class="rounded-0 btn w-50" style="background-color: var(--bg-primary);">Buy
+                                Now</button>
+                            <button class="rounded-0 btn w-50" style="background-color: var(--bg-primary);">Buy
+                                Now</button>
                         </div>
-                        <h5 class="card-title">{{ product.title }}</h5>
-                        <!-- <p v-if="product.expanded" class="card-text mt-2">{{ product.description }}</p> -->
                         <p class="card-text mt-2">{{ product.description }}</p>
                     </div>
                 </div>
@@ -28,24 +31,24 @@ export default {
     data() {
         return {
             products: [
-                // {
-                //     title: 'Greases',
-                //     image: 'https://clgoilindia.com/demo/assets/images/service/Grease-01.jpg',
-                //     description: 'We are engaged in offering a wide range of good Quality to our clients.',
-                //     expanded: false
-                // },
                 {
-                    title: 'Automotive Lubricants',
-                    image: 'https://clgoilindia.com/demo/assets/images/service/Grease-02.jpg',
-                    description: 'High-quality lubricants for all types of vehicles.',
+                    title: 'For the rush to finish faster',
+                    image: 'https://clgoilindia.com/demo/assets/images/service/Grease-01.jpg',
+                    // description: 'We are engaged in offering a wide range of good Quality to our clients.',
                     expanded: false
                 },
-                // {
-                //     title: 'Industrial Lubricants',
-                //     image: 'https://clgoilindia.com/demo/assets/images/service/Grease-03.jpg',
-                //     description: 'Specialized lubricants for industrial machinery and equipment.',
-                //     expanded: false
-                // }
+                {
+                    title: 'For long rides where the road never ends',
+                    image: 'https://clgoilindia.com/demo/assets/images/service/Grease-02.jpg',
+                    // description: 'High-quality lubricants for all types of vehicles.',
+                    expanded: false
+                },
+                {
+                    title: 'For the sneaky zips in the city',
+                    image: 'https://clgoilindia.com/demo/assets/images/service/Grease-03.jpg',
+                    // description: 'Specialized lubricants for industrial machinery and equipment.',
+                    expanded: false
+                }
             ]
         }
     },
@@ -67,6 +70,7 @@ export default {
 }
 
 .product-card:hover {
+    border: 1px solid var(--bg-primary);
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }

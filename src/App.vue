@@ -33,7 +33,7 @@ export default {
 
 :root {
   --brand-color: #E31E24 !important;
-   --bg-primary: #E31E24;
+  --bg-primary: #E31E24;
   --bg-secondary: #E0B229;
 }
 
@@ -48,6 +48,13 @@ export default {
   transform: translateY(0);
 }
 
+.text-ellipsis3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .text-ellipsis4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -55,6 +62,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .text-ellipsis5 {
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -62,7 +70,15 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.smaller{
+
+.smaller {
   font-size: 12px;
+}
+
+.primary-text {
+  background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

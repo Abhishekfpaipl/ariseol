@@ -4,7 +4,7 @@
       <p class="text-muted mb-1 text-uppercase">Gallery</p>
       <h2 class="display-5  text-uppercase" style="color: var(--bg-primary);">Check Our Gallery</h2>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
+    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
       <div class="col" v-for="(image, index) in images" :key="index" data-bs-toggle="modal"
         data-bs-target="#exampleModal">
         <div class="card rounded-0 border-0 overflow-hidden">

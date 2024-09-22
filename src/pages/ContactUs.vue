@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-5 py-5 text-bg-dark" v-observe>
+        <div class="container-fluid mt-5 py-5 text-white" style="background-color: var(--bg-primary)" v-observe>
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
                 <div class="col-12 col-md-6 mt-5 mt-md-0 ">
@@ -40,7 +40,7 @@
                             @click="handleIconClick(icon.action)">
                             <div class="d-flex justify-content-start align-items-center border p-2 ps-3">
                                 <a class="text-white" :href="icon.url" target="_blank">
-                                    <i :class="icon.icon" style="color: var(--bg-secondary);"></i>
+                                    <i :class="icon.icon" class="primary-text fs-1"></i>
                                 </a>
                                 <p class="text-start ms-2 fw-bold mb-0">{{ icon.name }}</p>
                             </div>
@@ -65,8 +65,8 @@ export default {
     data() {
         return {
             contact: [
-                { name: ' info@clgoilindia.com', icon: 'bi-envelope fs-3', color: 'red', action: 'openEmail' },
-                { name: ' HD-723, WeWork Enam Sambhav, C - 20, G Block Rd, G-Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra - 400051', icon: 'bi-geo-fill fs-3', color: 'black', action: 'openMaps' },
+                { name: ' info@clgoilindia.com', icon: 'bi-envelope', color: 'red', action: 'openEmail' },
+                { name: ' HD-723, WeWork Enam Sambhav, C - 20, G Block Rd, G-Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra - 400051', icon: 'bi-geo-fill', color: 'black', action: 'openMaps' },
             ],
             name: '',
             number: '',
