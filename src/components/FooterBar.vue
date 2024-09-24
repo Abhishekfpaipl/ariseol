@@ -85,7 +85,11 @@ export default {
                     name: 'Benefit',
                     link: '/benefit'
                 },
-
+                {
+                    id: 3,
+                    name: 'Check Dealership',
+                    link: '/check-dealership'
+                },
 
             ],
             links: [

@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 mt-5 mt-md-0 px-3 py-2">
+            <div class="col-md-8 px-3 py-2">
                 <p class="text-start">At Ariseol, we don't just manufacture lubricants – we orchestrate molecular
                     symphonies. Our mastery of cutting-edge nanotechnology allows us to engineer lubricants with a
                     precision that defies imagination, reaching down to a millionth of a millimeter. This isn't mere

@@ -9,7 +9,7 @@
                 <div class="card h-100 rounded-0 shadow p-3 px-4" style="background-color: var(--bg-primary);">
                     <div class="rounded border border-dark bg-dark border-2 p-1"
                         style="width:60px; height:60px; margin-top:-40px;">
-                        <i :class="product.icon" class="fs-1 primary-text"></i>
+                        <i :class="product.icon" class="fs-1 text-warning"></i>
                     </div>
                     <p class="mt-3 text-capitalize text-start fw-bold text-white">{{ product.title }}</p>
                 </div>

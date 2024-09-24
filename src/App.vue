@@ -30,6 +30,7 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+ 
 
 :root {
   --brand-color: #E31E24 !important;
@@ -86,5 +87,4 @@ export default {
 #scroll::-webkit-scrollbar {
   display: none;
 }
-
 </style>

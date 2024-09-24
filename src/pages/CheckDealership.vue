@@ -1,7 +1,7 @@
 <template>
     <div style="padding-top: 66px;">
         <SectionTopBanner />
-        <div class="container mb-5 pb-5" v-observe>
+        <div class="container mb-5 pb-5" style="margin-top:-40px" v-observe>
             <div class="text-white p-4" style="background-color:var(--bg-primary);">
                 <div class="row">
                     <div class="col-md-4 mb-3">

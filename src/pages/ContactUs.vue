@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-5 py-5 text-white" style="background-color: var(--bg-primary)" v-observe>
+        <div class="container-fluid mt-5 py-5 bg-dark text-white" v-observe>
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
                 <div class="col-12 col-md-6 mt-5 mt-md-0 ">
@@ -97,18 +97,12 @@ export default {
                     break;
             }
         },
-        submitQuery() {
-            // if (this.name != "" && this.number != "" && this.email != "" && this.note != "") {
-            //     const phoneNumber = '919711256073'; // Replace with your WhatsApp number
-            //     const message = `Hello, my name is ${this.name}.My No.${this.number}. My Email Id :${this.email}. Here is addtional note: ${this.note}`;
-            //     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-            //     window.open(whatsappUrl, '_blank');
-            //     this.name = "",
-            //         this.number = "",
-            //         this.email = "",
-            //         this.note = "";
-            // }
-            console.log('send')
+        submitQuery() { 
+            console.log('send');
+            this.name = "",
+            this.number = "",
+            this.email = "",
+            this.note = "";
         }
     },
 }

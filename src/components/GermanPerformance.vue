@@ -11,7 +11,7 @@
                 <div class="card h-100 border-0 shadow rounded-0" style="background-color: var(--bg-primary);">
                     <div class="card-body text-center">
                         <div class="mb-4">
-                            <i :class="item.icon" class="primary-text fs-1"></i>
+                            <i :class="item.icon" class="text-warning fs-1"></i>
                         </div>
                         <h3 class="card-title h5 mb-3 text-white">{{ item.title }}</h3>
                         <p class="card-text text-white">{{ item.description }}</p>
@@ -29,17 +29,17 @@ export default {
         return {
             businessFeatures: [
                 {
-                    icon: 'bi bi-award text-danger',
+                    icon: 'bi bi-award',
                     title: 'German Engineering Excellence',
                     description: 'You want more info about V8 products? They are manufactured according to a German formula, which makes them unparalleled around the world of performance.'
                 },
                 {
-                    icon: 'bi bi-droplet-half text-warning',
+                    icon: 'bi bi-droplet-half',
                     title: 'Specialized Product Range',
                     description: 'From high-performance motor oils for vehicles to industrial lubricants designed to withstand extreme conditions.'
                 },
                 {
-                    icon: 'bi bi-globe text-success',
+                    icon: 'bi bi-globe',
                     title: 'Environmental Responsibility',
                     description: 'V8 lubricants are not only designed for exceptional performance but also engineered to minimize global environmental impact.'
                 }
