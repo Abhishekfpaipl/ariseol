@@ -4,10 +4,11 @@
             <p class="text-muted mb-1 text-uppercase">Ariseol Lubricants</p>
             <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">GERMAN MOTOR OIL TECHNOLOGY</h2>
         </div>
-        <div class="row text-start g-1">
+        <div class="row">
             <div class="col-md-6">
                 <p class="mb-4">
-                    Ariseol German Motor Oil is a leading force in the global lubrication industry, dedicated to producing
+                    Ariseol German Motor Oil is a leading force in the global lubrication industry, dedicated to
+                    producing
                     cutting-edge motor oils that enhance engine performance, efficiency, and durability. Whether for
                     personal vehicles or heavy-duty industrial machinery, our products are crafted to meet the
                     demanding requirements of modern engines.
@@ -25,15 +26,15 @@
                     technologies enable precise monitoring of oil performance, helping customers to extend engine life,
                     minimize maintenance costs, and reduce downtime.
                 </p>
-                <div class="mt-4"> 
+                <div class="mt-4">
                     <router-link to="/dealership" class="btn rounded-0 me-3 mb-2 text-white w-100"
                         style="background-color: var(--bg-primary);">Become a
-                        Distributor</router-link> 
+                        Distributor</router-link>
                 </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center justify-content-end">
-                <img src="/img/german.png" alt="" class="" style="width:100%; height: 500px; object-fit: contain;">
-            </div>
+            <!-- <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <img src="/img/german.png" alt="" class="w-100" style="width:90%; height: 90%; object-fit: contain;">
+            </div> -->
         </div>
     </div>
 </template>
