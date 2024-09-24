@@ -1,45 +1,36 @@
 <template>
-    <div style="padding-top: 66px;">
+    <div container style="padding-top: 66px;">
         <SectionTopBanner />
-        <div class="container bg-white rounded-top-5" style="margin-top: -40px;" v-observe>
-            <SuccessStory :tests="tests" v-observe />
-            <div class="my-5">
-                <TeamInfoSection :techTeam="techTeam" :marketingTeam="marketingTeam" :managementTeam="managementTeam"
-                    v-observe />
-            </div>
-        </div> 
-        <div class="">
-            <AutoScrolling :links="country" imageFilter="invert(1)" textColor="text-white" textSize="fs-4 pt-3"
-                bgColor="#02539E" title="we are currently working in" v-observe />
+        <div class="my-5" v-observe>
+            <SuccessStory :tests="tests" />
         </div>
-        <div class="container py-5 rounded-top-5 bg-white" style="margin-top: -40px;"> 
-            <div class="">
-                <WhyChooseUs v-observe />
-            </div>
-            <div class="">
-                <AboutKeyFeatures v-observe />
-            </div> 
+        <div class="my-5" v-observe>
+            <TeamInfoSection :techTeam="techTeam" :marketingTeam="marketingTeam" :managementTeam="managementTeam" />
         </div>
-        <div class="my-5">
+        <div class="my-5" v-observe>
+            <WhyChooseUs />
+        </div>
+        <div class="my-5" v-observe>
+            <AboutKeyFeatures />
+        </div>
+        <div class="my-5" v-observe>
             <OurCoreValues />
         </div>
 
     </div>
 </template>
 <script>
-import WhyChooseUs from "@/components/WhyChooseUs.vue";  
+import WhyChooseUs from "@/components/WhyChooseUs.vue";
 
-import SuccessStory from "@/components/SuccessStory.vue"; 
-import TeamInfoSection from "@/components/TeamInfoSection.vue";  
-import AutoScrolling from "@/components/AutoScrolling.vue";
+import SuccessStory from "@/components/SuccessStory.vue";
+import TeamInfoSection from "@/components/TeamInfoSection.vue";
 import OurCoreValues from "@/components/OurCoreValues.vue";
 import AboutKeyFeatures from "@/components/AboutKeyFeatures.vue";
 import SectionTopBanner from "@/components/SectionTopBanner.vue";
 export default {
     name: "AboutUs",
     components: {
-        WhyChooseUs,  
-        AutoScrolling,
+        WhyChooseUs,
         OurCoreValues,
         SuccessStory,
         TeamInfoSection,

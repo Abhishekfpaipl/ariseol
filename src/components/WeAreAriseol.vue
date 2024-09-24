@@ -13,10 +13,10 @@
                     Airseol has been synonymous with: </p>
             </div>
             <div class="col-md-6">
-                <div class="row">
-                    <div class="col-4" v-for="(card, index) in cards" :key="index">
-                        <div class="d-flex align-items-center gap-3">
-                            <i :class="card.icon" class="fs-1 text-start"></i>
+                <div class="row g-1">
+                    <div class="col-12" v-for="(card, index) in cards" :key="index">
+                        <div class="border p-2 d-flex align-items-center gap-3">
+                            <i :class="card.icon" class="fs-4 text-start"></i>
                             <span class="text-center fs-5 fw-bold">{{ card.title }}</span>
                         </div>
                     </div>

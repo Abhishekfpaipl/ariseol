@@ -1,8 +1,8 @@
 <template>
     <div class="banner-container">
-        <img src="/img/productBanner.jpg" alt="Product Banner" class="banner-image">
-        <div class="overlay">
-            <h1 class="banner-title">{{ pageName }}</h1>
+        <img src="/img/test.jpg" alt="Product Banner" class="banner-image">
+        <div class="overlay" >
+            <h1 class="display-1 banner-title">{{ pageName }}</h1>
         </div>
     </div>
 </template>
@@ -30,7 +30,7 @@ export default {
 
 .banner-image {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -40,14 +40,13 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6); 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.banner-title {
-    font-size: 4rem;
+.banner-title { 
     color: white;
     font-weight: bold;
     text-transform: uppercase;

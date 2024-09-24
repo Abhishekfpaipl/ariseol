@@ -1,8 +1,11 @@
 <template>
     <div>
         <div class="container pt-4">
-            <h3 class="text-center ">Our Core Values</h3>
-            <p class="text-center container">
+            <div class="text-start mb-5">
+                <p class="text-muted mb-1 text-uppercase">Check</p>
+                <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Our Core Values</h2>
+            </div>
+            <p class="text-start container">
                 One thing that we've tried to keep consistent through all these years is our core set of values and
                 beliefs.
                 They have helped us get to where we are today, and they guide us as we grow. We inculcate these
@@ -12,7 +15,8 @@
             </p>
             <div class="p-2 row">
                 <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
-                    <div class="d-md-flex align-items-center border p-2" style=" min-height: 120px;">
+                    <div class="d-md-flex align-items-center p-2"
+                        style=" min-height: 120px; border: 1px solid var(--bg-primary);">
                         <i :class="data.icon" class="fs-2 mx-3" style="color: var(--bg-primary)"></i>
                         <div class=" ms-2 text-md-start">
                             <span class="fw-bold">{{ data.heading }}</span>

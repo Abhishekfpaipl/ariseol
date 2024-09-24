@@ -1,7 +1,10 @@
 <template>
     <div class="container">
+        <div class="text-start mb-5">
+            <p class="text-muted mb-1 text-uppercase">Check</p>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Why Choose Us?</h2>
+        </div>
         <div class="row">
-            <h1 class="px-2 text-center mb-5">Why Choose Us?</h1> 
             <div class="col-md-6 position-relative">
                 <img src="/img/whychooseus.jpeg" alt="Why choose us" class="img-fluid w-100">
             </div>

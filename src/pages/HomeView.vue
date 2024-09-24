@@ -37,8 +37,8 @@
     <GermanTechonology />
     <GermanPerformance />
     <ProductSection />
-    <FeaturesSection />
     <WeAreAriseol />
+    <FeaturesSection />
     <OurAdvantages />
     <ProductCard />
     <AboutSection />

@@ -9,14 +9,14 @@
     <div class="row g-1">
       <div class="col-4 mb-4" v-for="(card, index) in cards" :key="index">
         <div class="card rounded-0 position-relative border-0 p-2 text-white bg-dark">
-          <i v-if="card.icon" :class="card.icon" class="fs-1 primary-text"></i>
+          <i v-if="card.icon" :class="card.icon" class="fs-1 text-warning"></i>
           <!-- <div class="d-flex justify-content-center align-items-center">
             <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
               style="width: 50px; height: 50px;">
             </div>
           </div> -->
           <p class="card-text smaller mb-1 text-uppercase">{{ card.description }}</p>
-          <p class="card-title mb-0"><span class="fs-1">{{ card.title }}</span> <span class="small">%</span></p>
+          <p class="card-title mb-0"><span class="fs-1 ">{{ card.title }}</span> <span class="small">%</span></p>
           <p class="text-center smaller">PLUS</p>
         </div>
       </div>
@@ -33,19 +33,19 @@ export default {
         {
           title: '11',
           description: "Torque",
-          icon: 'bi bi-lightning-fill',
+          icon: 'bi bi-lightning',
           backgroundImage: '/img/update.jpg',
         },
         {
           title: '22',
           description: 'Performance ',
           backgroundImage: '/img/grease.jpg',
-          icon: 'bi bi-star-fill',
+          icon: 'bi bi-star',
         },
         {
           title: '61',
           description: "Protection",
-          icon: 'bi bi-shield-fill',
+          icon: 'bi bi-shield ',
           backgroundImage: '/img/industry.jpg',
         }
       ]
