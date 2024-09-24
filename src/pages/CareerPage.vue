@@ -89,20 +89,7 @@ export default {
             designation: '',
             note: ''
         }
-    },
-    methods: {
-        submitQuery() {
-            if (this.name != "" && this.designation != "" && this.note != "") {
-                const phoneNumber = '918860012001'; // Replace with your WhatsApp number
-                const message = `Hello, my name is ${this.name}. I am : ${this.designation}. Here are some additional notes: ${this.note}.`;
-                const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
-                this.name = "",
-                    this.service = "",
-                    this.note = "";
-            }
-        }
-    },
+    }, 
 
 }
 </script>

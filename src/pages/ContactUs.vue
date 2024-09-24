@@ -65,7 +65,7 @@ export default {
     data() {
         return {
             contact: [
-                { name: ' info@ariseol.com', icon: 'bi-envelope', color: 'red', action: 'openEmail' },
+                { name: ' info@clgoilindia.com', icon: 'bi-envelope', color: 'red', action: 'openEmail' },
                 { name: ' HD-723, WeWork Enam Sambhav, C - 20, G Block Rd, G-Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra - 400051', icon: 'bi-geo-fill', color: 'black', action: 'openMaps' },
             ],
             name: '',
@@ -98,16 +98,17 @@ export default {
             }
         },
         submitQuery() {
-            if (this.name != "" && this.number != "" && this.email != "" && this.note != "") {
-                const phoneNumber = '919711256073'; // Replace with your WhatsApp number
-                const message = `Hello, my name is ${this.name}.My No.${this.number}. My Email Id :${this.email}. Here is addtional note: ${this.note}`;
-                const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
-                this.name = "",
-                    this.number = "",
-                    this.email = "",
-                    this.note = "";
-            }
+            // if (this.name != "" && this.number != "" && this.email != "" && this.note != "") {
+            //     const phoneNumber = '919711256073'; // Replace with your WhatsApp number
+            //     const message = `Hello, my name is ${this.name}.My No.${this.number}. My Email Id :${this.email}. Here is addtional note: ${this.note}`;
+            //     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+            //     window.open(whatsappUrl, '_blank');
+            //     this.name = "",
+            //         this.number = "",
+            //         this.email = "",
+            //         this.note = "";
+            // }
+            console.log('send')
         }
     },
 }

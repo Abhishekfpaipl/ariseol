@@ -175,39 +175,7 @@ export default {
         SectionTopBanner
     },
     data() {
-        return {
-            datas: [
-                {
-                    icon: 'bi bi-lightbulb',
-                    heading: 'Think Different',
-                    text: 'Random ideas, new suggestions, and challenging the norm are always welcome.'
-                },
-                {
-                    icon: 'bi bi-person',
-                    heading: 'Stay Weird, Be Yourself',
-                    text: 'The Souled Store is strictly a judgment-free zone. Just be the best version of yourself.'
-                },
-                {
-                    icon: 'bi bi-people',
-                    heading: 'Respect Everyone',
-                    text: 'Treat others how you’d like to be treated, and you have a happy family.'
-                },
-                {
-                    icon: 'bi bi-check2-all',
-                    heading: 'Ownership Of Work',
-                    text: 'Give every task, small or big, your best shot. Always remember- 99% right is 100% wrong.'
-                },
-                {
-                    icon: 'bi bi-gear',
-                    heading: 'Take Initiative',
-                    text: 'Want to change something? Change it. See something that needs fixing? Fix it.'
-                },
-                {
-                    icon: 'bi bi-graph-up',
-                    heading: 'Growth & Learning',
-                    text: 'Work with various teams and departments and learn something new every day.'
-                },
-            ],
+        return { 
             benefits: [
                 {
                     "id": 1,
@@ -352,17 +320,18 @@ export default {
     methods: {
 
         submitForm() {
-            const phoneNumber = '919711256073';
-            const message = `Name: ${this.form.applicantName},%0A  
-            Number: ${this.form.mobileNo},%0A
-            AltNumber: ${this.form.alternateNo},%0A
-            Email: ${this.form.emailId},%0A
-            DOB: ${this.form.dateOfBirth},%0A
-            How did you hear about us: ${this.form.howDidYouHearAboutUs},%0A
-            Exp: ${this.form.totalYearsOfExperience}%0A `;
+            // const phoneNumber = '919711256073';
+            // const message = `Name: ${this.form.applicantName},%0A  
+            // Number: ${this.form.mobileNo},%0A
+            // AltNumber: ${this.form.alternateNo},%0A
+            // Email: ${this.form.emailId},%0A
+            // DOB: ${this.form.dateOfBirth},%0A
+            // How did you hear about us: ${this.form.howDidYouHearAboutUs},%0A
+            // Exp: ${this.form.totalYearsOfExperience}%0A `;
 
-            const url = `https://wa.me/${phoneNumber}?text=${message}`;
-            window.open(url, '_blank');
+            // const url = `https://wa.me/${phoneNumber}?text=${message}`;
+            // window.open(url, '_blank');
+            console.log('send')
         }
     }
 

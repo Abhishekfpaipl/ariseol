@@ -10,7 +10,7 @@
 
             <div class=" col-12 col-md-4 mb-3 text-center">
                 <p class="mb-2 fw-bold">Contact Us</p>
-                <p class="mb-2">Email : info@ariseol.com</p>
+                <p class="mb-2">Email : info@clgoilindia.com</p>
                 <p class="mb-2">Address : HD-723, WeWork Enam Sambhav, C - 20, <br>G Block Rd, G-Block BKC, Bandra Kurla
                     Complex,<br> Bandra East, Mumbai, Maharashtra - 400051 </p>
                 <div class="d-flex gap-2 justify-content-center">
@@ -85,7 +85,7 @@ export default {
                     name: 'Benefit',
                     link: '/benefit'
                 },
-              
+
 
             ],
             links: [
