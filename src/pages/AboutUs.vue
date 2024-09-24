@@ -8,7 +8,7 @@
             <TeamInfoSection :techTeam="techTeam" :marketingTeam="marketingTeam" :managementTeam="managementTeam" />
         </div>
         <div class="my-5" v-observe>
-            <WhyChooseUs />
+            <AriseolBenefits />
         </div>
         <div class="my-5" v-observe>
             <AboutKeyFeatures />
@@ -20,7 +20,7 @@
     </div>
 </template>
 <script>
-import WhyChooseUs from "@/components/WhyChooseUs.vue";
+import AriseolBenefits from "@/components/AriseolBenefits.vue";
 
 import SuccessStory from "@/components/SuccessStory.vue";
 import TeamInfoSection from "@/components/TeamInfoSection.vue";
@@ -30,7 +30,7 @@ import SectionTopBanner from "@/components/SectionTopBanner.vue";
 export default {
     name: "AboutUs",
     components: {
-        WhyChooseUs,
+        AriseolBenefits,
         OurCoreValues,
         SuccessStory,
         TeamInfoSection,

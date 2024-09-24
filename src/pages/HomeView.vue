@@ -28,24 +28,31 @@
         <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Precision Engineered with Nanotechnology
         </h2>
       </div>
-      <ImageTextSection image-src="https://ilindia.idemitsu.com/landingpage/assets/images/irg/nto-ifve.png"
+      <!-- <ImageTextSection image-src="/img/oiltexture.jpg"
         text="At Ariseol, we harness cutting-edge nanotechnology to engineer lubricants with unparalleled precision—down to a millionth of a millimeter. Even the most polished gears have microscopic imperfections, and our advanced electron microscopes allow us to inspect and refine lubricants at the nanoscale. This ensures that our products provide optimal performance, reducing friction and wear at the most minute level. Since our founding in 1911, we’ve been committed to this level of precision, continuously developing solutions tailored to meet the specific needs of our customers. With over a century of expertise, we remain at the forefront of innovation, ensuring our lubricants not only meet but exceed industry standards."
-        image-alt="gallery" :imageFirst="false" />
-
+        image-alt="gallery" :imageFirst="false" /> -->
+      <NanoTechnology />
     </div>
     <!-- <ImageTextSection /> -->
     <GermanTechonology />
     <GermanPerformance />
     <ProductSection />
     <WeAreAriseol />
-    <FeaturesSection />
     <OurAdvantages />
+    <FeaturesSection />
     <ProductCard />
     <AboutSection />
-    <GallerySection />
-    <TeamSection />
     <TestimonialSection />
+    <div class="my-5">
+      <AriseolBenefits />
+    </div>
     <ContactSection />
+    <div class="my-5">
+      <TeamSection />
+    </div>
+    <div class="my-5">
+      <GallerySection />
+    </div>
   </div>
 </template>
 
@@ -53,7 +60,7 @@
 import CarouselBanner from "@/components/CarouselBanner.vue";
 import GallerySection from "@/components/GallerySection.vue";
 // import CardSection from "@/components/CardSection.vue";
-import ImageTextSection from "@/components/ImageTextSection.vue";
+// import ImageTextSection from "@/components/ImageTextSection.vue";
 // import ProductSection from "@/components/ProductSection.vue";
 import TeamSection from "@/components/TeamSection.vue";
 // import ContactSection from "@/components/ContactSection.vue";
@@ -65,6 +72,8 @@ import WeAreAriseol from "@/components/WeAreAriseol.vue";
 import OurAdvantages from "@/components/OurAdvantages.vue";
 import GermanTechonology from "@/components/GermanTechonology.vue";
 import GermanPerformance from "@/components/GermanPerformance.vue";
+import NanoTechnology from "@/components/NanoTechnology.vue";
+import AriseolBenefits from "@/components/AriseolBenefits.vue";
 // import ProductCard from "@/components/ProductCard.vue";
 
 export default {
@@ -74,7 +83,7 @@ export default {
     GallerySection,
     // ImageSection,
     // CardSection,
-    ImageTextSection,
+    // ImageTextSection,
     // ProductSection,
     TeamSection,
     // ContactSection,
@@ -85,6 +94,8 @@ export default {
     OurAdvantages,
     GermanTechonology,
     GermanPerformance,
+    NanoTechnology,
+    AriseolBenefits
     // ProductCard,
   },
   data() {

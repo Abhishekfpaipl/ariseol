@@ -1,6 +1,9 @@
 <template>
     <div class="container">
-        <h1 class="pt-3">Our Success Story</h1>
+        <div class="text-start mb-5">
+            <p class="text-muted mb-1 text-uppercase">Our</p>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);"> Success Story</h2>
+        </div>
         <div class="row mt-5">
             <div class="col-12 position-relative  d-flex align-items-center justify-content-center pt-5">
                 <div class="card rounded-3">

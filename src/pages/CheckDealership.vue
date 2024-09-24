@@ -1,8 +1,8 @@
 <template>
-    <div style="padding-top: 66px;"> 
+    <div style="padding-top: 66px;">
         <SectionTopBanner />
-        <div class="container mb-5 pb-5" style="margin-top: -50px;" v-observe>
-            <div class="text-white p-4" style="background-color:var(--bg-primary);"> 
+        <div class="container mb-5 pb-5" v-observe>
+            <div class="text-white p-4" style="background-color:var(--bg-primary);">
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <select v-model="selectedState" @change="updateCities" class="form-select">
@@ -76,7 +76,7 @@ export default {
             showDealers: false, // Added data property to control visibility
             title: '',
         }
-    }, 
+    },
     computed: {
         states() {
             return this.$store.getters['states/getStates']
@@ -112,4 +112,4 @@ export default {
         },
     }
 }
-</script> 
+</script>

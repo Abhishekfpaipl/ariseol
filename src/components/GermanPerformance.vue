@@ -2,7 +2,7 @@
     <div class="container my-5">
         <div class="text-start mb-5">
             <p class="text-muted mb-1 text-uppercase">About Our Global Business</p>
-            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Unparalleled Performance in Wholesale
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Unparalleled Performance in Bulk
                 Manufacturing</h2>
         </div>
         <!-- <h2 class="text-center mb-5">About Our Global Business: Unparalleled Performance in Wholesale Manufacturing</h2> -->

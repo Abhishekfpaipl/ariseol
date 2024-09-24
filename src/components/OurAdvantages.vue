@@ -1,18 +1,22 @@
 <template>
     <div class="container my-5">
         <div class="text-start">
-            <!-- <p class="text-muted mb-1 text-uppercase">Features</p> -->
-            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Our Advantages</h2>
+            <p class="text-muted mb-1 text-uppercase">Ariseol</p>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">why choose us?</h2>
         </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-6">
+        <div class="row justify-content-center align-items-start">
+            <div class="col-md-6 mt-3">
                 <p class="text-start fs-5 mb-4">
-                    Zeil after having made its mark in the industrial Lubricants Sector is looking at establishing a
-                    strong
-                    footprint in the Automotive Sector with the launch of its Motor Oils.
+                    Ariseol, the renowned powerhouse in industrial lubricants, is gearing up for a game-changing
+                    expansion. After establishing itself as a dominant force in the industrial sector, the company is
+                    now setting its sights on conquering new territory: the automotive market.
+                    With decades of expertise in formulating high-performance lubricants for demanding industrial
+                    applications, Ariseol is poised to revolutionize the world of motor oils. As Ariseol prepares to
+                    unveil its state-of-the-art
+                    motor oils, the automotive industry stands on the brink of a lubricant revolution.
                 </p>
                 <div class="row g-1">
-                    <div class="col-md-6" v-for="(advantage, index) in advantages" :key="index">
+                    <div class="col-12" v-for="(advantage, index) in advantages" :key="index">
                         <div class="d-flex align-items-center">
                             <i class="me-3 fs-4" :class="advantage.icon"></i>
                             <span>{{ advantage.text }}</span>

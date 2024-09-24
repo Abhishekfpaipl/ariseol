@@ -25,15 +25,10 @@
                     technologies enable precise monitoring of oil performance, helping customers to extend engine life,
                     minimize maintenance costs, and reduce downtime.
                 </p>
-                <div class="mt-4">
-                    <button class="btn rounded-0 me-3 mb-2 text-white" style="background-color: var(--bg-primary);">Get
-                        a
-                        Quote</button>
-                    <router-link to="/dealership" class="btn rounded-0 me-3 mb-2 text-white"
+                <div class="mt-4"> 
+                    <router-link to="/dealership" class="btn rounded-0 me-3 mb-2 text-white w-100"
                         style="background-color: var(--bg-primary);">Become a
-                        Distributor</router-link>
-                    <button class="btn rounded-0 mb-2 text-white" style="background-color: var(--bg-primary);">Check Our
-                        Products</button>
+                        Distributor</router-link> 
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-end">

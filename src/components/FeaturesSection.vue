@@ -1,7 +1,7 @@
 <template>
     <div class="container my-5">
         <div class="text-start mb-5">
-            <p class="text-muted mb-1 text-uppercase">Features</p>
+            <p class="text-muted mb-1 text-uppercase">Ariseol</p>
             <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Check Our Features</h2>
         </div>
         <div class="row g-3">

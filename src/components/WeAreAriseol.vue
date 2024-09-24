@@ -1,16 +1,16 @@
 <template>
     <div class="container my-5">
         <div class="text-start mb-5">
-            <!-- <p class="text-muted mb-1 text-uppercase">Features</p> -->
-            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">we are ariseol</h2>
+            <p class="text-muted mb-1 text-uppercase">Ariseol</p>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">what makes us different</h2>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6">
-                <p class="text-center mb-5">Recognized worldwide as 'The specialist in synthetic lubricants', Ariseol is
-                    German
-                    company Specialized in the manufacturing and marketing of performance products. For more than 150
-                    years,
-                    Airseol has been synonymous with: </p>
+                <p class="text-start mb-5">Renowned across the globe as 'The Specialist in Synthetic Lubricants',
+                    Ariseol stands as a beacon of German engineering excellence and innovation. This powerhouse of a
+                    company has carved out a unique niche in the highly competitive world of performance products,
+                    focusing on the cutting-edge development, meticulous manufacturing, and strategic marketing of
+                    state-of-the-art lubricants.</p>
             </div>
             <div class="col-md-6">
                 <div class="row g-1">

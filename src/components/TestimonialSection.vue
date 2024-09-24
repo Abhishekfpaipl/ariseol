@@ -61,7 +61,7 @@
             </div>
             <div class="marquee marquee--reverse" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards2" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
@@ -83,7 +83,7 @@
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards2" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
@@ -106,7 +106,7 @@
             </div>
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards3" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
@@ -128,7 +128,7 @@
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
+                    <div class="" v-for="(card, index) in cards3" :key="index">
                         <div class="card-container bg-light border position-relative rounded p-2 ">
                             <div class="card border-0">
                                 <div class="card-header d-flex flex-column justify-content-center align-items-center">
@@ -216,8 +216,113 @@ export default {
                     name: 'Hiroshi Yamamoto',
                     subtitle: 'Director at RBB Buildcon Pvt. Ltd.',
                     review: 'This motor oil provides excellent protection and enhances engine performance. We have seen extended service intervals and improved fuel efficiency.',
+                },
+
+            ],
+            cards2: [
+                {
+                    image: 'img/flags/brazil.jpg',
+                    title: 'Brazil',
+                    name: 'Carlos Silva',
+                    subtitle: 'Operations Manager at Tranporte Nacional',
+                    review: 'Using this oil, we’ve noticed smoother engine operation in our transport fleet, even in high-heat conditions. Definitely a product we trust.',
+                },
+                {
+                    image: 'img/flags/italy.jpg',
+                    title: 'Italy',
+                    name: 'Giulia Rossi',
+                    subtitle: 'Fleet Supervisor at Milano Logistics',
+                    review: 'The oil’s performance has been outstanding. Our trucks experience less downtime and run more efficiently on long routes.',
+                },
+                {
+                    image: 'img/flags/south-korea.jpg',
+                    title: 'South Korea',
+                    name: 'Jung-ho Park',
+                    subtitle: 'Technical Manager at Seoul Heavy Industries',
+                    review: 'Our heavy-duty machinery runs like a dream with this oil. Its durability and protection have reduced wear and extended maintenance intervals.',
+                },
+                {
+                    image: 'img/flags/russia.jpg',
+                    title: 'Russia',
+                    name: 'Anastasia Ivanova',
+                    subtitle: 'Director at Siberian Transport Co.',
+                    review: 'Even in sub-zero temperatures, this motor oil ensures reliable starts and optimal performance. It’s a game-changer for our operations.',
+                },
+                {
+                    image: 'img/flags/mexico.svg',
+                    title: 'Mexico',
+                    name: 'Juan Lopez',
+                    subtitle: 'Fleet Manager at Logística del Sur',
+                    review: 'Since we began using this motor oil, our fuel consumption has noticeably decreased, and engine performance has never been better.',
+                },
+                {
+                    image: 'img/flags/spain.svg',
+                    title: 'Spain',
+                    name: 'Isabella García',
+                    subtitle: 'Logistics Coordinator at Transporte Ibérico',
+                    review: 'Our fleet’s performance has greatly improved with this oil. The engines run smoother and require less frequent maintenance.',
+                },
+                {
+                    image: 'img/flags/south-africa.jpg',
+                    title: 'South Africa',
+                    name: 'Thabo Mokoena',
+                    subtitle: 'Operations Director at Cape Haulers',
+                    review: 'This motor oil has proven to be reliable under extreme conditions. It keeps our engines performing at peak efficiency, even in hot climates.',
                 }
+            ],
+            cards3: [
+                {
+                    image: 'img/flags/sweden.jpg',
+                    title: 'Sweden',
+                    name: 'Lars Johansson',
+                    subtitle: 'Transport Manager at NordFreight AB',
+                    review: 'The cold weather performance is exceptional. Even in freezing temperatures, the engines start smoothly, and we have had fewer breakdowns.',
+                },
+                {
+                    image: 'img/flags/netherlands.jpg',
+                    title: 'Netherlands',
+                    name: 'Marieke Van Dijk',
+                    subtitle: 'Fleet Manager at EuroTrans BV',
+                    review: 'Since switching to this motor oil, our fleet has been more efficient, and we’ve noticed extended oil change intervals, saving both time and money.',
+                },
+                {
+                    image: 'img/flags/argentina.jpg',
+                    title: 'Argentina',
+                    name: 'Diego Perez',
+                    subtitle: 'Operations Lead at Andes Logistics',
+                    review: 'We operate across different terrains, and this motor oil has ensured smooth performance, reducing engine wear in our trucks.',
+                },
+                {
+                    image: 'img/flags/china.jpg',
+                    title: 'China',
+                    name: 'Li Wei',
+                    subtitle: 'Maintenance Director at Beijing Freight Co.',
+                    review: 'The oil’s longevity and efficiency have dramatically decreased our operational costs. It’s ideal for our high-performance fleet.',
+                },
+                {
+                    image: 'img/flags/saudi-arabia.jpg',
+                    title: 'Saudi Arabia',
+                    name: 'Ahmed Al-Farouq',
+                    subtitle: 'Logistics Head at Desert Transport Co.',
+                    review: 'This oil stands up to the harsh desert environment, providing excellent performance even in extreme heat and sandy conditions.',
+                },
+                {
+                    image: 'img/flags/norway.jpg',
+                    title: 'Norway',
+                    name: 'Erik Hansen',
+                    subtitle: 'Fleet Supervisor at FjordHaulage AS',
+                    review: 'Our trucks operate in challenging weather conditions, and this motor oil has provided consistent performance and protection all year round.',
+                },
+                {
+                    image: 'img/flags/new-zealand.jpg',
+                    title: 'New Zealand',
+                    name: 'Olivia Clarke',
+                    subtitle: 'Transport Director at Kiwi Logistics Ltd.',
+                    review: 'The fuel efficiency and engine protection we’ve experienced with this oil are unmatched. It’s now a key part of our fleet’s maintenance.',
+                }
+
             ]
+
 
 
         };

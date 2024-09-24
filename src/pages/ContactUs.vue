@@ -2,7 +2,7 @@
     <div style="padding-top: 66px;">
 
         <SectionTopBanner />
-        <div class="container bg-white rounded-top-5" style="padding-top: 64px;margin-top: -40px;" v-observe>
+        <div class="container " v-observe>
             <div class="row p-3">
                 <div class="col-12 pt-4 text-center">
                     <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation" novalidate>
@@ -65,7 +65,7 @@ export default {
     data() {
         return {
             contact: [
-                { name: ' info@clgoilindia.com', icon: 'bi-envelope', color: 'red', action: 'openEmail' },
+                { name: ' info@ariseol.com', icon: 'bi-envelope', color: 'red', action: 'openEmail' },
                 { name: ' HD-723, WeWork Enam Sambhav, C - 20, G Block Rd, G-Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra - 400051', icon: 'bi-geo-fill', color: 'black', action: 'openMaps' },
             ],
             name: '',

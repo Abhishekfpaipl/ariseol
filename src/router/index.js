@@ -37,9 +37,9 @@ const routes = [
     component: () => import("@/pages/TermOfUse.vue"),
   },
   {
-    path: "/oem-solutions",
-    name: "OemSolutions",
-    component: () => import("@/pages/OemSolutions.vue"),
+    path: "/gallery",
+    name: "GalleryPage",
+    component: () => import("@/pages/GalleryPage.vue"),
   },
   {
     path: "/check-dealership",

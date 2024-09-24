@@ -1,7 +1,7 @@
 <template>
     <div style="padding-top: 66px;">
         <SectionTopBanner />
-        <div class="container py-5 rounded-top-5 bg-white" style="margin-top: -40px;" v-observe>
+        <div class="container my-5" v-observe>
             <div class="row">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <img src="/img/partnership.svg" style="width: 350px; max-width: 80%" alt="">
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-warning w-100">Submit</button>
+                                <button type="submit" class="btn btn-danger w-100">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -70,7 +70,10 @@
             <OurCoreValues />
         </div>
         <div class="container my-5">
-            <h1 class="text-center mb-5">Check Dealership</h1>
+            <div class="text-start my-5">
+                <p class="text-muted mb-1 text-uppercase">Ariseol</p>
+                <h2 class="display-5  text-uppercase" style="color: var(--bg-primary);">Check Dealership</h2>
+            </div>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 mb-3" v-observe>
                     <div class="card text-white rounded-0  card-hover" style="background-color: #F78C17 !important;">
@@ -96,7 +99,10 @@
             </div>
         </div>
         <div class="container py-5">
-            <h3 class="text-capitalize mb-5">Our Partnership Benefits</h3>
+            <div class="text-start my-5">
+                <p class="text-muted mb-1 text-uppercase">Ariseol</p>
+                <h2 class="display-5  text-uppercase" style="color: var(--bg-primary);">Our Partnership Benefits</h2>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
                 <div v-for="(benefit, index) in benefits" :key="index" class="col">
                     <div class="card h-100 mb-3"
@@ -114,11 +120,16 @@
             </div>
         </div>
 
-        <div class="my-3 py-3 text-center" >
+        <div class="my-3 py-3 text-center">
             <div class="container p-md-5 p-3">
-                <h1 class="text-center text-capitalize">Frequently asked questions</h1>
-                <small>Take advantage of curated questions and answers frequently asked by the visitors &
-                    business.</small>
+                <div class="text-start my-5">
+                    <p class="text-muted mb-1 text-uppercase">Ariseol</p>
+                    <h2 class="display-5  text-uppercase" style="color: var(--bg-primary);">Frequently asked questions
+                    </h2>
+                    <p class="text-start small">Take advantage of curated questions and answers frequently asked by the
+                        visitors &
+                        business.</p>
+                </div>
                 <div class="row row-cols-1 row-cols-md-2 g-2 mt-5">
                     <div class="col" v-for="(question, index) in questions" :key="index">
                         <div class="accordion" id="accordionExample">

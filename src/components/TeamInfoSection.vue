@@ -2,13 +2,13 @@
   <div>
     <div class="container py-3">
       <div class="text-start mb-5">
-        <p class="text-muted mb-1 text-uppercase">Check</p>
-        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Our Production Team</h2>
+        <p class="text-muted mb-1 text-uppercase">Our</p>
+        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);"> Production Team</h2>
       </div>
       <div class="position-relative">
         <div class="d-flex gap-3 overflow-x-scroll" ref="techScrollContainer" id="scroll">
           <div class="" v-for="(team, index) in techTeam" :key="index">
-            <div class="card" style="min-width: 18rem; border:1px solid var(--bg-primary)">
+            <div class="card rounded-0" style="min-width: 18rem; border:1px solid var(--bg-primary)">
               <div class="card-body p-0">
                 <div class="text-center card-title py-2 bg-light" style="border-bottom:1px solid var(--bg-primary)">
                   <h5 class="lh-1 mb-0">{{ team.name }}</h5>
@@ -32,13 +32,13 @@
 
     <div class="container py-3 my-5">
       <div class="text-start mb-5">
-        <p class="text-muted mb-1 text-uppercase">Check</p>
-        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Our Marketing Team</h2>
+        <p class="text-muted mb-1 text-uppercase">Our</p>
+        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);"> Marketing Team</h2>
       </div>
       <div class="position-relative">
         <div class="d-flex gap-3 overflow-x-scroll" ref="marketingScrollContainer" id="scroll">
           <div class="" v-for="(team, index) in marketingTeam" :key="index">
-            <div class="card" style="min-width: 18rem; border:1px solid var(--bg-primary)">
+            <div class="card rounded-0" style="min-width: 18rem; border:1px solid var(--bg-primary)">
               <div class="card-body p-0">
                 <div class="text-center card-title py-2 bg-light" style="border-bottom:1px solid var(--bg-primary)">
                   <h5 class="lh-1 mb-0">{{ team.name }}</h5>
@@ -62,13 +62,13 @@
 
     <div class="container py-3 my-5">
       <div class="text-start mb-5">
-        <p class="text-muted mb-1 text-uppercase">Check</p>
-        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Our Management Team</h2>
+        <p class="text-muted mb-1 text-uppercase">Our</p>
+        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);"> Management Team</h2>
       </div>
       <div class="position-relative">
         <div class="d-flex gap-3 overflow-x-scroll" ref="managementScrollContainer" id="scroll">
           <div class="" v-for="(team, index) in managementTeam" :key="index">
-            <div class="card" style="min-width: 18rem; min-height: 12rem; border:1px solid var(--bg-primary)">
+            <div class="card rounded-0" style="min-width: 18rem; min-height: 12rem; border:1px solid var(--bg-primary)">
               <div class="card-body p-0">
                 <div class="text-center card-title py-2 bg-light" style="border-bottom:1px solid var(--bg-primary)">
                   <h5 class="lh-1 mb-0">{{ team.name }}</h5>
