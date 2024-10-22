@@ -62,7 +62,7 @@ import GallerySection from "@/components/GallerySection.vue";
 // import CardSection from "@/components/CardSection.vue";
 // import ImageTextSection from "@/components/ImageTextSection.vue";
 // import ProductSection from "@/components/ProductSection.vue";
-import TeamSection from "@/components/TeamSection.vue";
+// import TeamSection from "@/components/TeamSection.vue";
 // import ContactSection from "@/components/ContactSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
 import TestimonialSection from "@/components/TestimonialSection.vue";
@@ -85,7 +85,7 @@ export default {
     // CardSection,
     // ImageTextSection,
     // ProductSection,
-    TeamSection,
+    // TeamSection,
     // ContactSection,
     AboutSection,
     TestimonialSection,
